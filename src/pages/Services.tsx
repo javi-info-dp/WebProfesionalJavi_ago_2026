@@ -8,12 +8,12 @@ export default function Services() {
 
   const serviciosProfesionales = [
     {
-      badge: "PROGRAMA INSIGNIA",
+      badge: "PROGRAMA SIGNATURE",
       title: "BlackBox90©: Cambio de Juego",
       subtitle: "Coaching & Mentoring Ejecutivo de 90 días",
       description: "Un laboratorio estratégico personal diseñado exclusivamente para profesionales senior de marketing digital. 4 sesiones de coaching + 3 de mentoring 1:1 para redefinir tu posicionamiento, empaquetar tu propuesta de valor y acceder al mercado oculto de oportunidades.",
       features: [
-        "Auditoría profunda en 6 dimensiones críticas",
+        "Auditoría profunda de trayectoria y habilidades diferenciales",
         "Diseño de CV Estratégico y Portfolio de Liderazgo",
         "CRM Personal con 20-30 stakeholders clave",
         "Simulaciones de entrevista y validación market-ready",
@@ -34,7 +34,7 @@ export default function Services() {
         "Preparación intensiva de entrevistas ejecutivas",
         "Análisis de encaje cultural y retributivo"
       ],
-      link: "https://bookme.name/dpsoluciones/lite/llamada-de-contacto",
+      link: "https://bookme.name/dpsoluciones/lite/sesion-estrategica-blackbox90-60-minutos",
       cta: "Agendar Sesión 1:1",
       isInternal: false
     },
@@ -107,38 +107,38 @@ export default function Services() {
 
   return (
     <AnimatedPage>
-      <div className="max-w-container-max mx-auto px-gutter py-section-desktop">
+      <div className="max-w-container-max mx-auto px-gutter py-section-desktop bg-[#0b0b0e]">
         
         {/* Header */}
-        <div className="text-center max-w-3xl mx-auto mb-12">
-          <span className="font-label-caps text-secondary uppercase tracking-widest">PROPUESTA DE VALOR</span>
-          <h1 className="font-display-lg-mobile md:font-display-lg text-primary mt-2">
+        <div className="text-center max-w-3xl mx-auto mb-14">
+          <span className="font-label-caps text-secondary uppercase tracking-widest text-xs">PROPUESTA DE VALOR</span>
+          <h1 className="font-display-lg-mobile md:font-display-lg text-white mt-2">
             Servicios y Programas
           </h1>
-          <p className="font-body-lg text-on-surface-variant mt-4">
-            Soluciones contrastadas tanto para profesionales senior que buscan un cambio de juego, como para empresas que necesitan incorporar talento estratégico.
+          <p className="font-body-lg text-gray-300 mt-4 text-sm md:text-base">
+            Soluciones de alto nivel tanto para profesionales senior que buscan un cambio de juego, como para empresas que necesitan incorporar talento directivo.
           </p>
         </div>
 
         {/* Selector de Pestaña */}
         <div className="flex justify-center mb-16">
-          <div className="bg-surface-container p-1.5 rounded-none border border-outline-variant/40 flex max-w-md w-full">
+          <div className="bg-[#14141a] p-1.5 rounded-lg border border-white/[0.08] flex max-w-md w-full">
             <button
               onClick={() => setActiveTab('profesionales')}
-              className={`flex-1 py-3 px-6 font-label-caps text-xs tracking-wider uppercase transition-all duration-300 ${
+              className={`flex-1 py-3 px-6 font-label-caps text-xs tracking-wider uppercase transition-all duration-300 rounded-md ${
                 activeTab === 'profesionales'
-                  ? 'bg-primary text-on-primary shadow-md'
-                  : 'text-on-surface-variant hover:text-primary'
+                  ? 'bg-secondary text-[#0b0b0e] font-bold shadow-lg shadow-secondary/15'
+                  : 'text-gray-400 hover:text-white'
               }`}
             >
               Para Profesionales
             </button>
             <button
               onClick={() => setActiveTab('empresas')}
-              className={`flex-1 py-3 px-6 font-label-caps text-xs tracking-wider uppercase transition-all duration-300 ${
+              className={`flex-1 py-3 px-6 font-label-caps text-xs tracking-wider uppercase transition-all duration-300 rounded-md ${
                 activeTab === 'empresas'
-                  ? 'bg-primary text-on-primary shadow-md'
-                  : 'text-on-surface-variant hover:text-primary'
+                  ? 'bg-secondary text-[#0b0b0e] font-bold shadow-lg shadow-secondary/15'
+                  : 'text-gray-400 hover:text-white'
               }`}
             >
               Para Empresas & Startups
@@ -154,21 +154,21 @@ export default function Services() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: idx * 0.1 }}
-              className="bg-surface-container-lowest border border-outline-variant/30 p-8 flex flex-col justify-between hover:border-secondary transition-all duration-300 group shadow-sm"
+              className="glass-panel p-8 rounded-xl flex flex-col justify-between group"
             >
               <div>
-                <span className="font-label-caps text-secondary text-xs block mb-2">{item.badge}</span>
-                <h3 className="font-headline-sm text-primary mb-1 text-xl">{item.title}</h3>
-                <h4 className="font-body-md text-secondary font-medium text-xs mb-4">{item.subtitle}</h4>
-                <p className="font-body-md text-on-surface-variant text-sm mb-6 leading-relaxed">
+                <span className="font-label-caps text-secondary text-[11px] block mb-2 tracking-wider font-bold">{item.badge}</span>
+                <h3 className="font-headline-sm text-white mb-1 text-xl font-bold">{item.title}</h3>
+                <h4 className="font-body-md text-gray-400 text-xs mb-4">{item.subtitle}</h4>
+                <p className="font-body-md text-gray-300 text-sm mb-6 leading-relaxed">
                   {item.description}
                 </p>
 
-                <div className="border-t border-outline-variant/20 pt-4 mb-8">
-                  <span className="font-label-caps text-on-surface-variant text-[11px] uppercase block mb-3">Qué incluye:</span>
-                  <ul className="space-y-2">
+                <div className="border-t border-white/[0.06] pt-4 mb-8">
+                  <span className="font-label-caps text-secondary text-[11px] uppercase block mb-3 font-bold">Qué incluye:</span>
+                  <ul className="space-y-2.5">
                     {item.features.map((feat, fIdx) => (
-                      <li key={fIdx} className="flex items-start text-xs text-on-surface-variant">
+                      <li key={fIdx} className="flex items-start text-xs text-gray-300">
                         <span className="text-secondary mr-2 font-bold">✓</span>
                         <span>{feat}</span>
                       </li>
@@ -180,7 +180,7 @@ export default function Services() {
               {item.isInternal ? (
                 <Link
                   to={item.link}
-                  className="block text-center bg-primary text-on-primary font-label-caps text-xs py-3 px-6 hover:bg-secondary transition-colors uppercase tracking-wider font-bold"
+                  className="block text-center bg-secondary text-[#0b0b0e] font-label-caps text-xs py-3.5 px-6 hover:bg-secondary-hover transition-colors uppercase tracking-wider font-bold rounded"
                 >
                   {item.cta}
                 </Link>
@@ -189,7 +189,7 @@ export default function Services() {
                   href={item.link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="block text-center bg-primary text-on-primary font-label-caps text-xs py-3 px-6 hover:bg-secondary transition-colors uppercase tracking-wider font-bold"
+                  className="block text-center bg-secondary text-[#0b0b0e] font-label-caps text-xs py-3.5 px-6 hover:bg-secondary-hover transition-colors uppercase tracking-wider font-bold rounded"
                 >
                   {item.cta}
                 </a>
@@ -198,22 +198,22 @@ export default function Services() {
           ))}
         </div>
 
-        {/* Banner Scorecard */}
-        <div className="bg-surface-bone p-8 lg:p-12 border border-secondary/20 flex flex-col md:flex-row items-center justify-between gap-6">
+        {/* Banner Sesión Estratégica Directa */}
+        <div className="glass-panel p-8 lg:p-12 rounded-xl flex flex-col md:flex-row items-center justify-between gap-6 border-l-4 border-l-secondary">
           <div className="max-w-2xl">
-            <span className="font-label-caps text-secondary text-xs uppercase block mb-1">EVALUACIÓN RÁPIDA</span>
-            <h3 className="font-headline-md text-primary">¿No sabes por dónde empezar?</h3>
-            <p className="font-body-md text-on-surface-variant mt-2">
-              Realiza el Scorecard de Autodiagnóstico en 15 minutos y recibe un análisis personalizado sobre tu preparación en 6 dimensiones críticas.
+            <span className="font-label-caps text-secondary text-xs uppercase block mb-1 font-bold">CONVERSACIÓN SIN COMPROMISO</span>
+            <h3 className="font-headline-md text-white text-2xl">¿Hablamos de tu caso particular?</h3>
+            <p className="font-body-md text-gray-300 mt-2 text-sm leading-relaxed">
+              Reserva una sesión estratégica de 30 minutos para explorar cómo podemos orientar tu perfil o cubrir esa posición clave en tu organización.
             </p>
           </div>
           <a
-            href="https://form.typeform.com/to/RH3SPk3R"
+            href="https://bookme.name/dpsoluciones/lite/sesion-estrategica-blackbox90-60-minutos"
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-secondary text-on-primary font-label-caps text-xs py-4 px-8 hover:bg-primary transition-colors uppercase tracking-wider whitespace-nowrap font-bold"
+            className="bg-secondary text-[#0b0b0e] font-label-caps text-xs py-4 px-8 hover:bg-secondary-hover transition-colors uppercase tracking-widest whitespace-nowrap font-bold shadow-lg shadow-secondary/15 rounded"
           >
-            Hacer Autodiagnóstico →
+            Agendar Reunión →
           </a>
         </div>
 

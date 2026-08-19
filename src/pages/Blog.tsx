@@ -58,15 +58,15 @@ export default function Blog() {
 
   return (
     <AnimatedPage>
-      <div className="max-w-container-max mx-auto px-gutter py-section-desktop">
-
+      <div className="max-w-container-max mx-auto px-gutter py-section-desktop bg-[#0b0b0e]">
+        
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <span className="font-label-caps text-secondary uppercase tracking-widest">DIVULGACIÓN & CRITERIO</span>
-          <h1 className="font-display-lg-mobile md:font-display-lg text-primary mt-2">
+          <span className="font-label-caps text-secondary uppercase tracking-widest text-xs font-bold">DIVULGACIÓN & CRITERIO</span>
+          <h1 className="font-display-lg-mobile md:font-display-lg text-white mt-2">
             Blog y Publicaciones
           </h1>
-          <p className="font-body-lg text-on-surface-variant mt-4">
+          <p className="font-body-lg text-gray-300 mt-4 text-sm md:text-base">
             Artículos, entrevistas y análisis sobre selección de talento, mercado oculto, liderazgo y desarrollo de carreras de marketing digital.
           </p>
         </div>
@@ -80,18 +80,18 @@ export default function Blog() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: idx * 0.08 }}
-              className="bg-surface-container-lowest border border-outline-variant/30 p-8 flex flex-col justify-between hover:border-secondary transition-all shadow-sm group cursor-pointer"
+              className="glass-card p-8 rounded-xl flex flex-col justify-between cursor-pointer group"
               onClick={() => setSelectedArticle(art)}
             >
               <div>
                 <div className="flex justify-between items-center mb-3">
-                  <span className="font-label-caps text-secondary text-xs">{art.tag}</span>
-                  <span className="text-[11px] text-on-surface-variant">{art.date}</span>
+                  <span className="font-label-caps text-secondary text-[11px] font-bold">{art.tag}</span>
+                  <span className="text-[11px] text-gray-400">{art.date}</span>
                 </div>
-                <h3 className="font-headline-sm text-primary mb-3 text-lg font-bold group-hover:text-secondary transition-colors">
+                <h3 className="font-headline-sm text-white mb-3 text-lg font-bold group-hover:text-secondary transition-colors">
                   {art.title}
                 </h3>
-                <p className="font-body-md text-on-surface-variant text-sm leading-relaxed mb-6">
+                <p className="font-body-md text-gray-400 text-xs leading-relaxed mb-6">
                   {art.summary}
                 </p>
               </div>
@@ -101,7 +101,7 @@ export default function Blog() {
                   e.stopPropagation();
                   setSelectedArticle(art);
                 }}
-                className="inline-flex items-center gap-2 font-label-caps text-secondary font-bold text-xs hover:text-primary transition-colors border-b border-secondary/40 pb-1 self-start"
+                className="inline-flex items-center gap-2 font-label-caps text-secondary font-bold text-xs hover:text-white transition-colors border-b border-secondary/40 pb-1 self-start"
               >
                 Leer artículo completo →
               </button>
@@ -111,38 +111,38 @@ export default function Blog() {
 
         {/* Modal de Lectura de Artículo */}
         {selectedArticle && (
-          <div className="fixed inset-0 z-50 bg-black/60 backdrop-blur-sm flex items-center justify-center p-4">
-            <motion.div
+          <div className="fixed inset-0 z-50 bg-black/80 backdrop-blur-md flex items-center justify-center p-4">
+            <motion.div 
               initial={{ opacity: 0, scale: 0.95 }}
               animate={{ opacity: 1, scale: 1 }}
-              className="bg-surface p-8 lg:p-12 max-w-2xl w-full max-h-[85vh] overflow-y-auto border border-secondary shadow-2xl relative"
+              className="bg-[#121216] p-8 lg:p-12 max-w-2xl w-full max-h-[85vh] overflow-y-auto border border-secondary/40 rounded-xl shadow-2xl relative text-white"
             >
-              <button
+              <button 
                 onClick={() => setSelectedArticle(null)}
-                className="absolute top-6 right-6 text-primary hover:text-secondary text-xl font-bold p-2"
+                className="absolute top-6 right-6 text-gray-400 hover:text-secondary text-xl font-bold p-2"
                 aria-label="Cerrar modal"
               >
                 ✕
               </button>
 
-              <span className="font-label-caps text-secondary text-xs block mb-2">{selectedArticle.tag}</span>
-              <h2 className="font-headline-md text-primary text-2xl mb-4">{selectedArticle.title}</h2>
-              <p className="font-body-md text-secondary font-medium text-sm mb-6 pb-4 border-b border-outline-variant/30">
+              <span className="font-label-caps text-secondary text-xs block mb-2 font-bold">{selectedArticle.tag}</span>
+              <h2 className="font-headline-md text-white text-2xl font-bold mb-3">{selectedArticle.title}</h2>
+              <p className="font-body-md text-secondary font-medium text-xs mb-6 pb-4 border-b border-white/[0.08]">
                 Por Javier Abeleira · DP Soluciones & BlackBox90©
               </p>
 
-              <div className="font-body-lg text-on-surface-variant text-base leading-relaxed space-y-4 mb-8">
+              <div className="font-body-lg text-gray-300 text-sm leading-relaxed space-y-4 mb-8">
                 <p>{selectedArticle.summary}</p>
                 <p>{selectedArticle.content}</p>
-                <p className="text-sm bg-surface-container-low p-4 border-l-2 border-secondary italic">
+                <p className="text-xs bg-[#181820] p-4 border-l-2 border-secondary italic rounded-r text-gray-200">
                   "El mayor riesgo en una transición directiva no es la falta de competencias, sino la falta de una narrativa estratégica alineada con el mercado."
                 </p>
               </div>
 
-              <div className="border-t border-outline-variant/30 pt-6 flex justify-between items-center">
+              <div className="border-t border-white/[0.08] pt-6 flex justify-between items-center">
                 <button
                   onClick={() => setSelectedArticle(null)}
-                  className="font-label-caps text-xs text-on-surface-variant hover:text-primary uppercase"
+                  className="font-label-caps text-xs text-gray-400 hover:text-white uppercase"
                 >
                   Cerrar
                 </button>
@@ -150,7 +150,7 @@ export default function Blog() {
                   href="https://bookme.name/dpsoluciones/lite/sesion-estrategica-blackbox90-60-minutos"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="bg-primary text-on-primary font-label-caps text-xs py-2.5 px-5 hover:bg-secondary transition-colors uppercase font-bold"
+                  className="bg-secondary text-[#0b0b0e] font-label-caps text-xs py-2.5 px-5 hover:bg-secondary-hover transition-colors uppercase font-bold rounded"
                 >
                   Agendar Sesión Estratégica
                 </a>
