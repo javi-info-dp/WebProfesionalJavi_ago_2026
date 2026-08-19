@@ -43,7 +43,7 @@ const hitos = [
     empresa: "DP SOLUCIONES · Desarrollo Profesional",
     cargo: "Fundador · Recruiter | Headhunter (Freelance)",
     fecha: "2017 - Presente (9 años)",
-    desc: "Acompañamiento a profesionales de marketing digital y selección de talento directivo para startups e instituciones.",
+    desc: "Acompañamiento a profesionales senior de marketing digital y selección de talento directivo para startups e instituciones.",
     img: "/images/13.png"
   },
   {
@@ -99,7 +99,7 @@ export default function About() {
               Headhunter · EMCC Accredited Coach/Mentor · Creador de BlackBox90©
             </h2>
             <p className="text-gray-300 leading-relaxed text-base md:text-lg">
-              Tras más de dos décadas transformando equipos y analizando el mercado laboral, decidí enfocar mi energía en lo que más me apasiona: <strong className="text-white">impulsar carreras ejecutivas y construir equipos ganadores</strong>.
+              Tras más de dos décadas transformando equipos y analizando el mercado laboral desde dentro, decidí enfocar mi energía en lo que más me apasiona: <strong className="text-white">impulsar carreras de líderes de marketing digital y construir equipos ganadores</strong>.
             </p>
             <p className="text-gray-400 leading-relaxed text-sm md:text-base">
               No vendo fórmulas mágicas ni soluciones prefabricadas. Mi enfoque se basa en una relación cercana, sincera y sin artificios. Combino la visión estratégica de un seleccionador en activo con el rigor profundo de un coach certificado para ayudarte a dar el salto que realmente mereces.
@@ -110,15 +110,15 @@ export default function About() {
             <span className="font-label-caps text-secondary text-xs block mb-4 font-bold tracking-widest">EN CIFRAS</span>
             <div className="space-y-5">
               <div>
-                <div className="text-4xl font-bold font-display-lg-mobile text-secondary">+27 Años</div>
+                <div className="text-3xl md:text-4xl font-bold font-display-lg-mobile text-secondary">Más de 20 Años</div>
                 <div className="text-xs text-gray-400 mt-1">En selección, RR.HH. y desarrollo de talento</div>
               </div>
               <div className="border-t border-white/[0.08] pt-4">
-                <div className="text-4xl font-bold font-display-lg-mobile text-secondary">+1.000</div>
+                <div className="text-3xl md:text-4xl font-bold font-display-lg-mobile text-secondary">Más de 1.000</div>
                 <div className="text-xs text-gray-400 mt-1">Búsquedas ejecutivas y procesos de selección</div>
               </div>
               <div className="border-t border-white/[0.08] pt-4">
-                <div className="text-4xl font-bold font-display-lg-mobile text-secondary">EMCC</div>
+                <div className="text-3xl md:text-4xl font-bold font-display-lg-mobile text-secondary">EMCC</div>
                 <div className="text-xs text-gray-400 mt-1">Practitioner Accredited Coach & Mentor</div>
               </div>
             </div>

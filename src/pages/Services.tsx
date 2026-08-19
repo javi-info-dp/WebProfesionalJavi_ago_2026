@@ -10,14 +10,14 @@ export default function Services() {
     {
       badge: "PROGRAMA SIGNATURE",
       title: "BlackBox90©: Cambio de Juego",
-      subtitle: "Coaching & Mentoring Ejecutivo de 90 días",
-      description: "Un laboratorio estratégico personal diseñado exclusivamente para profesionales senior de marketing digital. 4 sesiones de coaching + 3 de mentoring 1:1 para redefinir tu posicionamiento, empaquetar tu propuesta de valor y acceder al mercado oculto de oportunidades.",
+      subtitle: "Estrategia de carrera & Mentoring 1:1 de 90 días",
+      description: "Un laboratorio estratégico personal diseñado exclusivamente para profesionales senior y directivos de marketing digital. 4 sesiones de coaching y 3 de mentoring 1:1 para redefinir tu posicionamiento, empaquetar tu propuesta de valor y acceder al mercado oculto.",
       features: [
         "Auditoría profunda de trayectoria y habilidades diferenciales",
         "Diseño de CV Estratégico y Portfolio de Liderazgo",
-        "CRM Personal con 20-30 stakeholders clave",
+        "CRM Personal con 20 a 30 stakeholders clave del sector",
         "Simulaciones de entrevista y validación market-ready",
-        "Acompañamiento en negociación de salario y condiciones"
+        "Acompañamiento en negociación de condiciones y retribución"
       ],
       link: "/blackbox90",
       cta: "Conocer BlackBox90©",
@@ -28,12 +28,12 @@ export default function Services() {
       badge: "1:1 INTENSIVO",
       title: "Mentoring de Carrera & Outplacement",
       subtitle: "Acompañamiento individualizado a medida",
-      description: "Sesiones estratégicas personalizables para desatascar tu discurso, preparar procesos de selección decisivos, resolver dudas de liderazgo o evaluar ofertas de empleo complejas.",
+      description: "Sesiones estratégicas personalizadas para afinar tu discurso, preparar procesos de selección decisivos, resolver dudas de liderazgo o evaluar ofertas de empleo de alta dirección.",
       features: [
-        "Auditoría de perfil de LinkedIn y marca personal",
-        "Estrategia de posicionamiento sectorial",
-        "Preparación intensiva de entrevistas ejecutivas",
-        "Análisis de encaje cultural y retributivo"
+        "Auditoría de perfil de LinkedIn y marca ejecutiva",
+        "Estrategia de posicionamiento en el mercado digital",
+        "Preparación intensiva de entrevistas con comités",
+        "Análisis de encaje cultural y paquete retributivo"
       ],
       link: "https://bookme.name/dpsoluciones/lite/sesion-estrategica-blackbox90-60-minutos",
       cta: "Agendar Sesión 1:1",
@@ -44,11 +44,11 @@ export default function Services() {
       badge: "ORIENTACIÓN DIRECTIVA",
       title: "Deep Coaching Ejecutivo (EMCC)",
       subtitle: "Trabajo interno de liderazgo y claridad",
-      description: "Sesiones de coaching acreditadas por EMCC enfocadas en desbloquear resistencias, superar el síndrome de la persona impostora y tomar decisiones profesionales alineadas con tus valores y propósito.",
+      description: "Sesiones de coaching acreditadas por EMCC enfocadas en desbloquear resistencias, superar el síndrome de la persona impostora y tomar decisiones profesionales alineadas con tus valores y visión de futuro.",
       features: [
         "Acreditación internacional EMCC Practitioner",
-        "Gestión de bloqueos y miedos al cambio",
-        "Liderazgo consciente y comunicación asertiva",
+        "Gestión de bloqueos y miedos al cambio de etapa",
+        "Liderazgo consciente y comunicación directiva",
         "Plan de acción sostenible a largo plazo"
       ],
       link: "/contacto",
@@ -66,7 +66,7 @@ export default function Services() {
       description: "Búsqueda directa y atracción de perfiles clave en Marketing Digital, Growth, Performance, Product Marketing y Tecnología. Más de 20 años de experiencia y más de 1.000 búsquedas ejecutivas cerradas con éxito.",
       features: [
         "Definición exhaustiva del perfil y encaje cultural",
-        "Acceso directo a talento pasivo y mercado oculto",
+        "Acceso directo a talento pasivo y mercado no visible",
         "Evaluación técnica y competencial rigurosa",
         "Acompañamiento en la fase de oferta y onboarding"
       ],
@@ -84,7 +84,7 @@ export default function Services() {
         "Metodología práctica orientada a resultados",
         "Desarrollo de competencias de liderazgo",
         "Impartido en másteres universitarios y corporaciones",
-        "Formato presencial u online"
+        "Formato presencial u online con total flexibilidad"
       ],
       link: "/contacto",
       cta: "Diseñar Plan a Medida",
@@ -124,7 +124,7 @@ export default function Services() {
             Servicios y Programas
           </h1>
           <p className="text-gray-300 text-base md:text-lg leading-relaxed">
-            Metodologías contrastadas para profesionales que buscan un salto cualitativo en su carrera y para empresas que necesitan incorporar talento directivo clave.
+            Metodologías contrastadas para profesionales senior de marketing digital que buscan un salto cualitativo y para empresas que necesitan incorporar talento directivo clave.
           </p>
         </div>
 
@@ -220,7 +220,7 @@ export default function Services() {
             <span className="font-label-caps text-secondary text-xs uppercase block font-bold tracking-widest">CONVERSACIÓN SIN COMPROMISO</span>
             <h3 className="text-2xl md:text-3xl font-bold text-white tracking-tight">¿Hablamos de tu caso particular?</h3>
             <p className="text-gray-300 text-sm md:text-base leading-relaxed">
-              Reserva una sesión estratégica de 30 minutos para explorar cómo podemos orientar tu perfil o cubrir esa posición clave en tu organización.
+              Reserva una sesión estratégica de 60 minutos para explorar cómo podemos orientar tu perfil o cubrir esa posición clave en tu organización.
             </p>
           </div>
           <a
