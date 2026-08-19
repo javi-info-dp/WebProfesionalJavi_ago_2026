@@ -114,7 +114,7 @@ export default function Services() {
   return (
     <AnimatedPage>
       <div className="max-w-container-max mx-auto px-gutter py-section-desktop bg-[#0b0b0e]">
-        
+
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
           <span className="font-label-caps text-secondary uppercase tracking-[0.2em] text-xs font-bold">
@@ -133,21 +133,19 @@ export default function Services() {
           <div className="bg-[#14141a] p-1.5 rounded-xl border border-white/[0.08] flex max-w-md w-full shadow-lg">
             <button
               onClick={() => setActiveTab('profesionales')}
-              className={`flex-1 py-3.5 px-6 font-label-caps text-xs tracking-widest uppercase transition-all duration-300 rounded-lg ${
-                activeTab === 'profesionales'
+              className={`flex-1 py-3.5 px-6 font-label-caps text-xs tracking-widest uppercase transition-all duration-300 rounded-lg ${activeTab === 'profesionales'
                   ? 'bg-secondary text-[#0b0b0e] font-bold shadow-lg shadow-secondary/20'
                   : 'text-gray-400 hover:text-white'
-              }`}
+                }`}
             >
               Para Profesionales
             </button>
             <button
               onClick={() => setActiveTab('empresas')}
-              className={`flex-1 py-3.5 px-6 font-label-caps text-xs tracking-widest uppercase transition-all duration-300 rounded-lg ${
-                activeTab === 'empresas'
+              className={`flex-1 py-3.5 px-6 font-label-caps text-xs tracking-widest uppercase transition-all duration-300 rounded-lg ${activeTab === 'empresas'
                   ? 'bg-secondary text-[#0b0b0e] font-bold shadow-lg shadow-secondary/20'
                   : 'text-gray-400 hover:text-white'
-              }`}
+                }`}
             >
               Para Empresas & Startups
             </button>
@@ -167,9 +165,9 @@ export default function Services() {
               <div>
                 <div className="flex justify-between items-start mb-4">
                   <span className="font-label-caps text-secondary text-xs block tracking-widest font-bold">{item.badge}</span>
-                  <img 
-                    src={item.img} 
-                    alt="" 
+                  <img
+                    src={item.img}
+                    alt=""
                     className="w-14 h-14 object-contain opacity-75 group-hover:opacity-100 group-hover:scale-110 transition-all duration-500"
                     onError={(e) => { e.currentTarget.style.display = 'none'; }}
                   />
