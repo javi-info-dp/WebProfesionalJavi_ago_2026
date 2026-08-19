@@ -98,11 +98,13 @@ export default function Home() {
             
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white tracking-tight leading-[1.1]">
               Estrategia de carrera para <br/>
+
               <span className="text-secondary italic font-serif font-normal">líderes de marketing digital.</span>
             </h1>
             
             <p className="text-gray-300 max-w-2xl mx-auto lg:mx-0 text-base sm:text-lg md:text-xl leading-relaxed">
-              Más de 20 años evaluando talento al otro lado de la mesa. Ayudo a profesionales senior y directivos de marketing digital a desbloquear su verdadero valor de mercado y acceder a las mejores oportunidades ejecutivas.
+              Más de 20 años evaluando talento al otro lado de la mesa. 
+              Ayudo a profesionales senior y directivos de marketing digital a desbloquear su verdadero valor de mercado y acceder a las mejores oportunidades ejecutivas.
             </p>
             
             {/* Botones de Acción */}
