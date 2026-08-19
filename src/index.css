@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-background text-on-background antialiased;
+    font-family: 'Hanken Grotesk', sans-serif;
+  }
+
+  ::selection {
+    @apply bg-secondary/20 text-secondary;
+  }
+}
+
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+}
+
+/* High-end form inputs */
+.elegant-input {
+  width: 100%;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #c5c6cd;
+  padding: 8px 0;
+  color: #1b1b1d;
+  transition: border-color 0.3s ease;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.elegant-input:focus {
+  outline: none;
+  border-bottom-color: #000000;
+  box-shadow: none;
+}
+
+.elegant-input::placeholder {
+  color: #44474d;
+  opacity: 0.7;
+}
+
+/* Custom List Bullet */
+.gold-bullet li {
+  position: relative;
+  padding-left: 24px;
+}
+.gold-bullet li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 10px;
+  width: 4px;
+  height: 4px;
+  background-color: #775a19;
+}
