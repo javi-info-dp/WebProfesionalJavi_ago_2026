@@ -1,0 +1,4 @@
+Coloca aquí las imágenes que quieras utilizar en la web (fotos de perfil, logos, fotos de portada, etc.).
+
+Cualquier imagen que guardes aquí estará disponible directamente en el código como:
+/images/nombre-de-tu-imagen.ext

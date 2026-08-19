@@ -59,7 +59,7 @@ export default function Blog() {
   return (
     <AnimatedPage>
       <div className="max-w-container-max mx-auto px-gutter py-section-desktop">
-        
+
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           <span className="font-label-caps text-secondary uppercase tracking-widest">DIVULGACIÓN & CRITERIO</span>
@@ -112,12 +112,12 @@ export default function Blog() {
         {/* Modal de Lectura de Artículo */}
         {selectedArticle && (
           <div className="fixed inset-0 z-50 bg-black/60 backdrop-blur-sm flex items-center justify-center p-4">
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0, scale: 0.95 }}
               animate={{ opacity: 1, scale: 1 }}
               className="bg-surface p-8 lg:p-12 max-w-2xl w-full max-h-[85vh] overflow-y-auto border border-secondary shadow-2xl relative"
             >
-              <button 
+              <button
                 onClick={() => setSelectedArticle(null)}
                 className="absolute top-6 right-6 text-primary hover:text-secondary text-xl font-bold p-2"
                 aria-label="Cerrar modal"
