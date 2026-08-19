@@ -5,26 +5,26 @@ import { motion } from 'framer-motion';
 const pilares = [
   {
     num: "01",
-    title: "Claridad Estratégica & Narrativa",
-    desc: "Definición quirúrgica de tu propuesta de valor y tu tesis de liderazgo para que tu perfil destaque de inmediato ante directores generales y comités de selección.",
+    title: "Claridad y Tesis de Liderazgo",
+    desc: "Definición quirúrgica de tu propuesta de valor y fortalezas diferenciales para captar el interés inmediato de fundadores y comités de selección.",
     img: "/images/2.png"
   },
   {
     num: "02",
-    title: "Materiales de Nivel Ejecutivo",
-    desc: "Construcción de un CV Estratégico y Portfolio de Liderazgo diseñados bajo los criterios exactos con los que un headhunter evalúa perfiles de alta dirección.",
+    title: "Activos de Nivel Ejecutivo",
+    desc: "Construcción de tu CV Estratégico y Portfolio de Liderazgo diseñados bajo los criterios exactos con los que un headhunter evalúa perfiles de alta dirección.",
     img: "/images/3.png"
   },
   {
     num: "03",
     title: "Acceso al Mercado Oculto",
-    desc: "Activación de un CRM personal con los 20 o 30 stakeholders decisivos para acceder al 80% de posiciones que nunca llegan a publicarse.",
+    desc: "Activación de tu CRM personal con los 20 o 30 decisores estratégicos clave para acceder al 80% de posiciones que nunca llegan a publicarse.",
     img: "/images/4.png"
   },
   {
     num: "04",
-    title: "Negociación & Onboarding",
-    desc: "Simulaciones intensivas de entrevista ejecutiva y acompañamiento en la negociación del paquete retributivo, alcance y condiciones.",
+    title: "Negociación y Acompañamiento",
+    desc: "Simulaciones intensivas de entrevista, blindaje de tu paquete retributivo global y hoja de ruta para tus primeros 90 días en la nueva posición.",
     img: "/images/5.png"
   }
 ];
@@ -33,38 +33,38 @@ const soluciones = [
   {
     title: "BlackBox90©: Cambio de Juego",
     tag: "PROGRAMA EXCLUSIVO (8 PLAZAS)",
-    desc: "Programa de estrategia personal y mentoring 1:1 de 90 días para profesionales senior de marketing digital. Solo 8 plazas exclusivas por edición.",
+    desc: "Sprint estratégico 1:1 de 90 a 120 días para profesionales senior de marketing digital que buscan acceder al mercado oculto y negociar con máxima solvencia.",
     link: "/blackbox90",
-    cta: "Conocer el Programa",
+    cta: "Explorar BlackBox90©",
     img: "/images/13.png",
     bgAccent: "/images/18.png"
   },
   {
-    title: "Headhunting & Selección Digital",
-    tag: "EMPRESAS & STARTUPS",
-    desc: "Executive search especializado en la atracción y selección de directores de marketing, Growth leads y talento IT clave para proyectos en expansión.",
+    title: "Headhunting y Selección Digital",
+    tag: "STARTUPS Y SCALEUPS",
+    desc: "Executive search especializado en la atracción y selección de directores de marketing, Growth leads y talento digital clave para proyectos en expansión.",
     link: "/servicios",
-    cta: "Servicios para Empresas",
+    cta: "Servicios para Startups",
     img: "/images/26.png",
     bgAccent: "/images/21.png"
   },
   {
-    title: "Mentoring Directivo & Outplacement",
-    tag: "ACOMPAÑAMIENTO 1:1",
-    desc: "Sesiones estratégicas personalizadas para afinar tu discurso, preparar procesos decisivos o desbloquear transiciones de carrera complejas.",
+    title: "Mentoring Directivo y Outplacement",
+    tag: "ACOMPAÑAMIENTO ESTRATÉGICO 1:1",
+    desc: "Sesiones privadas de consultoría para afinar tu discurso, preparar procesos decisivos o desbloquear transiciones de carrera complejas.",
     link: "/servicios",
-    cta: "Ver Opciones 1:1",
+    cta: "Ver Formatos 1:1",
     img: "/images/30.png",
     bgAccent: "/images/37.png"
   }
 ];
 
 const sectores = [
-  "SaaS & B2B Tech",
-  "E-commerce & D2C",
-  "FinTech & InsurTech",
-  "MarTech & AdTech",
-  "Scaleups & Startups Digitales",
+  "SaaS y B2B Tech",
+  "E-commerce y D2C",
+  "FinTech e InsurTech",
+  "MarTech y AdTech",
+  "Startups y Scaleups Digitales",
   "Agencias de Alto Rendimiento"
 ];
 
@@ -93,22 +93,22 @@ export default function Home() {
 
             <div className="inline-flex items-center gap-2.5 text-secondary font-label-caps tracking-[0.2em] text-xs font-bold bg-secondary/10 border border-secondary/25 py-2.5 px-5 rounded-full">
               <span className="w-2.5 h-2.5 rounded-full bg-secondary animate-pulse"></span>
-              HEADHUNTER EN ACTIVO · COACH EMCC PRACTITIONER
+              HEADHUNTER EN ACTIVO · ACREDITACIÓN EMCC GLOBAL
             </div>
             
-            {/* Título Principal con Misma Tipografía y Separación de Bloques */}
+            {/* Título Principal */}
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white tracking-tight leading-[1.15]">
-              <span className="block mb-2">Estrategia de carrera para</span>
+              <span className="block mb-2">El cambio de juego estratégico para</span>
               <span className="block text-secondary">líderes de marketing digital.</span>
             </h1>
             
             {/* Subtítulo con Párrafos Separados */}
             <div className="space-y-4 max-w-2xl mx-auto lg:mx-0 text-gray-300 text-base sm:text-lg md:text-xl leading-relaxed">
               <p>
-                Más de 20 años evaluando talento al otro lado de la mesa.
+                Más de 20 años al otro lado de la mesa de contratación.
               </p>
               <p>
-                Ayudo a profesionales senior y directivos de marketing digital a desbloquear su verdadero valor de mercado y acceder a las mejores oportunidades ejecutivas.
+                Acompaño a directivos y profesionales senior de marketing a articular su valor diferencial, liderar con confianza y acceder al 80% de posiciones ejecutivas que nunca llegan a publicarse.
               </p>
             </div>
             
@@ -131,7 +131,7 @@ export default function Home() {
             </div>
           </div>
           
-          {/* Columna Derecha: Tarjeta Visual con Foto de Javier & Método */}
+          {/* Columna Derecha: Tarjeta Visual con Foto de Javier y Método */}
           <div className="w-full lg:w-5/12 flex justify-center lg:justify-end">
             <div className="glass-panel p-6 sm:p-8 rounded-3xl text-white max-w-md w-full relative overflow-hidden shadow-2xl border border-white/[0.1]">
               
@@ -139,7 +139,7 @@ export default function Home() {
               <div className="relative w-full h-72 sm:h-80 rounded-2xl overflow-hidden mb-6 border border-secondary/30 shadow-inner group">
                 <img 
                   src="/images/03.jpg" 
-                  alt="Javier Abeleira - Headhunter & Coach EMCC" 
+                  alt="Javier Abeleira - Headhunter y Coach EMCC" 
                   className="w-full h-full object-cover object-top filter grayscale contrast-125 group-hover:scale-105 transition-all duration-700"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#0b0b0e] via-transparent to-transparent"></div>
@@ -147,7 +147,7 @@ export default function Home() {
                 <div className="absolute bottom-4 left-4 right-4 flex justify-between items-end">
                   <div>
                     <span className="text-white font-bold text-lg sm:text-xl block">Javier Abeleira</span>
-                    <span className="text-secondary text-xs font-medium">Headhunter & Coach EMCC</span>
+                    <span className="text-secondary text-xs font-medium">Headhunter y Coach EMCC</span>
                   </div>
                   <span className="bg-secondary text-[#0b0b0e] text-[10px] font-bold tracking-widest uppercase px-3 py-1 rounded-full shadow-lg">
                     8 PLAZAS
@@ -159,10 +159,10 @@ export default function Home() {
               <div className="space-y-3">
                 <div className="flex justify-between items-center">
                   <h3 className="text-xl font-bold text-white">Método BlackBox90©</h3>
-                  <span className="text-xs text-secondary font-mono font-semibold">90 DÍAS 1:1</span>
+                  <span className="text-xs text-secondary font-mono font-semibold">SPRINT 1:1</span>
                 </div>
                 <p className="text-gray-300 text-xs sm:text-sm leading-relaxed">
-                  Claridad de propuesta de valor, CV Estratégico y acceso directo al mercado oculto de oportunidades de marketing digital.
+                  Un sistema estructurado para transformar tu trayectoria en una propuesta ejecutiva de alto impacto para fundadores y comités de dirección.
                 </p>
                 
                 <a 
@@ -171,7 +171,7 @@ export default function Home() {
                   rel="noopener noreferrer"
                   className="block text-center bg-secondary text-[#0b0b0e] font-label-caps py-3.5 px-6 hover:bg-secondary-hover transition-all font-bold uppercase text-xs tracking-widest rounded-md shadow-lg shadow-secondary/20 mt-4"
                 >
-                  Agendar Sesión de Diagnóstico →
+                  Solicitar Sesión de Diagnóstico 1:1 →
                 </a>
               </div>
 
@@ -184,20 +184,20 @@ export default function Home() {
       <section className="py-16 border-y border-white/[0.08] bg-[#070709]">
         <div className="max-w-container-max mx-auto px-gutter grid grid-cols-2 md:grid-cols-4 gap-8 text-center md:text-left">
           <div className="space-y-2">
-            <div className="font-label-caps text-xs sm:text-sm text-gray-300 uppercase tracking-widest font-semibold">AÑOS DE EXPERIENCIA</div>
-            <div className="text-4xl md:text-5xl text-secondary font-bold font-headline-lg">Más de 20</div>
+            <div className="font-label-caps text-xs sm:text-sm text-gray-300 uppercase tracking-widest font-semibold">TRAYECTORIA PROFESIONAL</div>
+            <div className="text-4xl md:text-5xl text-secondary font-bold font-headline-lg">Más de 20 años</div>
           </div>
           <div className="space-y-2">
-            <div className="font-label-caps text-xs sm:text-sm text-gray-300 uppercase tracking-widest font-semibold">PROCESOS DE SELECCIÓN</div>
+            <div className="font-label-caps text-xs sm:text-sm text-gray-300 uppercase tracking-widest font-semibold">PROCESOS EVALUADOS</div>
             <div className="text-4xl md:text-5xl text-secondary font-bold font-headline-lg">Más de 1.000</div>
           </div>
           <div className="space-y-2">
-            <div className="font-label-caps text-xs sm:text-sm text-gray-300 uppercase tracking-widest font-semibold">COACH PRACTITIONER</div>
-            <div className="text-4xl md:text-5xl text-secondary font-bold font-headline-lg">EMCC</div>
+            <div className="font-label-caps text-xs sm:text-sm text-gray-300 uppercase tracking-widest font-semibold">COACH SENIOR PRACTITIONER</div>
+            <div className="text-4xl md:text-5xl text-secondary font-bold font-headline-lg">EMCC Global</div>
           </div>
           <div className="space-y-2">
-            <div className="font-label-caps text-xs sm:text-sm text-gray-300 uppercase tracking-widest font-semibold">MÉTODO PROBADO</div>
-            <div className="text-4xl md:text-5xl text-secondary font-bold font-headline-lg">90 Días</div>
+            <div className="font-label-caps text-xs sm:text-sm text-gray-300 uppercase tracking-widest font-semibold">SPRINT METODOLÓGICO</div>
+            <div className="text-4xl md:text-5xl text-secondary font-bold font-headline-lg">90 a 120 Días</div>
           </div>
         </div>
       </section>
@@ -229,26 +229,26 @@ export default function Home() {
                 VENTAJA DIFERENCIAL
               </span>
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white tracking-tight leading-snug">
-                Conozco ambos lados de la mesa: sé qué busca el reclutador y cómo debe sonar tu propuesta.
+                Conozco con qué criterios evalúa quien toma la decisión y cómo debe sonar tu propuesta para destacar de inmediato.
               </h2>
               
               <div className="space-y-4 text-gray-300 text-base sm:text-lg leading-relaxed">
                 <p>
-                  La mayoría de los profesionales senior cometen el error de enviar CVs generalistas o depender únicamente de portales de empleo donde compiten con cientos de candidatos.
+                  El 80% de las oportunidades directivas no se publican en portales de empleo. Competir con cientos de candidatos enviando un CV genérico es una vía agotadora e ineficiente.
                 </p>
                 <p>
-                  Al haber liderado procesos de selección para startups y comités de dirección durante más de dos décadas, te enseño a posicionarte desde la perspectiva de quien toma la decisión de contratación.
+                  Tras más de dos décadas liderando procesos de selección para startups y scaleups en fases de crecimiento, te entreno para posicionarte con rigor, autoridad y la narrativa exacta que buscan los fundadores.
                 </p>
               </div>
               
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
                 <div className="glass-card p-5 rounded-xl border border-white/[0.08]">
-                  <span className="text-secondary font-bold text-base block mb-1">Sin Fórmulas Mágicas</span>
-                  <p className="text-gray-300 text-xs sm:text-sm leading-relaxed">Estrategia basada en datos, psicología de decisión ejecutiva y métricas de negocio.</p>
+                  <span className="text-secondary font-bold text-base block mb-1">Rigor y Rentabilidad Real</span>
+                  <p className="text-gray-300 text-xs sm:text-sm leading-relaxed">Sin humo ni fórmulas mágicas: estrategia basada en visión de negocio, datos y psicología de decisión directiva.</p>
                 </div>
                 <div className="glass-card p-5 rounded-xl border border-white/[0.08]">
-                  <span className="text-secondary font-bold text-base block mb-1">Relación Directa y Sincera</span>
-                  <p className="text-gray-300 text-xs sm:text-sm leading-relaxed">Feedback riguroso y constructivo para elevar tu nivel de competitividad en el mercado.</p>
+                  <span className="text-secondary font-bold text-base block mb-1">Sparring 1:1 Honesto</span>
+                  <p className="text-gray-300 text-xs sm:text-sm leading-relaxed">Feedback directo y constructivo, de igual a igual, para elevar tu nivel de competitividad en el mercado.</p>
                 </div>
               </div>
             </div>
@@ -262,10 +262,10 @@ export default function Home() {
         <div className="max-w-container-max mx-auto px-gutter">
           <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white tracking-tight">
-              Soluciones y Programas
+              Soluciones de Alto Rendimiento
             </h2>
             <p className="text-gray-300 text-base sm:text-lg leading-relaxed">
-              Soluciones a medida para profesionales que buscan un salto cualitativo y para empresas que necesitan líderes contrastados.
+              Acompañamiento individual para líderes que buscan un salto de escala y servicios estratégicos de talento para proyectos en expansión.
             </p>
           </div>
           
@@ -309,10 +309,10 @@ export default function Home() {
         <div className="max-w-container-max mx-auto px-gutter">
           <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white tracking-tight">
-              Los 4 Pilares del Cambio de Juego
+              La Arquitectura del Cambio de Juego
             </h2>
             <p className="text-gray-300 text-base sm:text-lg">
-              Los fundamentos que aseguran un posicionamiento sólido, diferencial y sostenible en el mercado.
+              Los fundamentos metodológicos para pasar de la búsqueda reactiva a liderar tus propias oportunidades ejecutivas.
             </p>
           </div>
           
@@ -349,7 +349,7 @@ export default function Home() {
       <section className="py-20 bg-[#070709] border-b border-white/[0.08]">
         <div className="max-w-container-max mx-auto px-gutter text-center">
           <span className="font-label-caps text-secondary text-xs sm:text-sm uppercase tracking-[0.25em] font-bold block mb-6">
-            SECTORES EN LOS QUE APLICA BLACKBOX90©
+            SECTORES DE ESPECIALIZACIÓN
           </span>
           <div className="flex flex-wrap justify-center gap-3 sm:gap-4 max-w-4xl mx-auto">
             {sectores.map((sec, idx) => (
@@ -361,32 +361,32 @@ export default function Home() {
         </div>
       </section>
 
-      {/* CTA Final con Foto de Javier & Reserva Directa */}
+      {/* CTA Final con Foto de Javier y Reserva Directa */}
       <section className="py-24 bg-[#0b0b0e] text-center">
         <div className="max-w-3xl mx-auto px-gutter space-y-6">
           <div className="w-20 h-20 mx-auto rounded-full overflow-hidden border-2 border-secondary shadow-lg mb-2">
             <img src="/images/05.jpg" alt="Javier Abeleira" className="w-full h-full object-cover" />
           </div>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white tracking-tight">
-            ¿Listo para definir tu siguiente gran proyecto?
+            ¿Hablamos de tu siguiente etapa profesional?
           </h2>
           <p className="text-gray-300 text-base sm:text-lg leading-relaxed">
-            Agenda una sesión estratégica confidencial de 60 minutos y analicemos tu situación profesional actual para trazar la mejor hoja de ruta.
+            Agenda una sesión estratégica confidencial de 60 minutos. Analizaremos tu posicionamiento actual, tu momento de carrera y trazaremos la hoja de ruta adecuada.
           </p>
           <div className="pt-4 flex flex-col sm:flex-row justify-center gap-4">
             <a 
               href="https://bookme.name/dpsoluciones/lite/sesion-estrategica-blackbox90-60-minutos" 
               target="_blank" 
-              rel="noopener noreferrer"
+              rel="noopener noreferrer" 
               className="bg-secondary text-[#0b0b0e] font-label-caps text-xs sm:text-sm py-4 px-9 hover:bg-secondary-hover transition-colors font-bold uppercase tracking-widest shadow-2xl shadow-secondary/20 rounded-md"
             >
-              Agendar Sesión Estratégica
+              Agendar Sesión Estratégica 1:1
             </a>
             <Link 
               to="/contacto"
               className="border border-white/25 text-white font-label-caps text-xs sm:text-sm py-4 px-8 hover:bg-white/5 hover:border-secondary transition-colors uppercase tracking-widest rounded-md font-semibold"
             >
-              Contactar por Mensaje
+              Enviar Consulta Privada
             </Link>
           </div>
         </div>

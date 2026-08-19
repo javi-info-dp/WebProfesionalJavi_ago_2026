@@ -1,58 +1,86 @@
 ---
 name: service-catalog
-description: Catálogo oficial de servicios para Profesionales Senior (BlackBox90© LITE, PREMIUM, Sesiones 1:1) y Empresas/Organizaciones (Headhunting & Selección Digital, Outplacement Ejecutivo, Formación Directiva In-Company).
+description: Define el catálogo de servicios de orientación y asesoramiento de carrera (paquetes básicos y extensiones) de la aplicación BlackBox. Úsala cuando necesites información sobre precios, duraciones o características de los servicios.
 ---
 
-# Catálogo Oficial de Servicios (Javier Abeleira / DP Soluciones)
+# Catálogo de Servicios
 
-Esta skill define la oferta completa de servicios, tanto en el ámbito B2C (profesionales senior de marketing digital) como en el ámbito B2B (empresas, startups y scaleups).
+Esta skill contiene la información oficial de los servicios, paquetes y extensiones que ofrece la plataforma. Úsala para asegurar consistencia en la información de precios, duraciones y características cuando generes contenido o estructures la base de datos y la interfaz.
 
----
+## PAQUETES BÁSICOS
 
-## 1. Servicios para Profesionales Senior (B2C)
+### BlackBox90 LITE
+- **Precio:** 1.200 €
+- **Duración:** 90 días (Sprint táctico central estricto de 12 semanas)
+- **Sesiones:** 8 sesiones 1:1 (4 Deep Coaching de 60 min + 4 Mentoring Táctico de 60 min)
+- **Cadencia:** cada 10-12 días
+- **Incluye:**
+  - Workbook completo
+  - CV Estratégico (1 iteración)
+  - PLD básico (2 casos)
+  - Plantilla CRM Personal
+  - 3 simulaciones de entrevista
+  - Soporte: Email 48-72h
+  - Entregables personalizados, individuales y solo los necesarios
+- **Ideal para:** Ejecutivos autónomos con objetivo claro y alta capacidad de ejecución.
 
-### A. Programa BlackBox90©: Cambio de Juego
-- **Modalidad LITE (90 días / 12 semanas):**
-  - 8 sesiones individuales 1:1 (Coaching profundo y Mentoring táctico).
-  - Auditoría y rediseño de CV Estratégico.
-  - Optimización de perfil de LinkedIn para decisores.
-  - Plantilla y metodología de CRM de Mercado Oculto.
-  - 3 simulaciones de entrevista ejecutiva con feedback de headhunter.
-  - Soporte y seguimiento por correo.
-- **Modalidad PREMIUM (120 días / 16 semanas):**
-  - 14 sesiones individuales 1:1 + 4 Flash Calls prioritarias (30 min).
-  - Portfolio de Liderazgo (PLD) completo con casos STAR.
-  - CRM Personalizado de Stakeholders y pipeline asistido.
-  - 5 simulaciones de entrevista y preparación de comités.
-  - Acompañamiento en negociación de paquete retributivo.
-  - Plan de aterrizaje y aceleración para los primeros 90 días (Onboarding).
-  - Soporte prioritario en menos de 24h.
-
-### B. Sesión Estratégica 1:1 (Diagnóstico Confidencial - 60 min)
-- Análisis de situación actual, auditoría rápida de posicionamiento y definición de la mejor hoja de ruta.
-- Punto de entrada necesario para evaluar el encaje y presentar la propuesta económica personalizada de BlackBox90©.
-
-### C. Mentoring Directivo & Asesoría Individual
-- Acompañamiento por bloques de sesiones para profesionales que necesitan preparar procesos puntuales o desbloquear decisiones de carrera complejas.
-
----
-
-## 2. Servicios para Empresas & Organizaciones (B2B)
-
-### A. Headhunting & Executive Search Digital
-- Selección especializada de directores de marketing, Growth Leads, CMOs y perfiles tecnológicos clave.
-- Metodología directa basada en evaluación por competencias, encaje cultural y validación de impacto comercial.
-
-### B. Executive Outplacement & Transición de Liderazgo
-- Programas a medida para empresas que atraviesan procesos de reestructuración o desvinculación directiva.
-- Acompañamiento 1:1 ético y confidencial para asegurar la recolocación del directivo en el menor tiempo posible.
-
-### C. Formación In-Company & Desarrollo de Habilidades Directivas
-- Talleres prácticos para comités de dirección y mandos intermedios: liderazgo de equipos remotos, gestión del cambio e integración de IA en flujos de marketing y ventas.
+### BlackBox90 PREMIUM
+- **Precio:** 2.900 €
+- **Duración:** 120 días / 4 meses (Consiste en las 12 semanas del Sprint táctico central + 1 mes de soporte de mercado asíncrono y flash calls para mantener el momentum de las entrevistas)
+- **Sesiones:** 14 sesiones 1:1 + 4 flash calls (8 Deep Coaching de 60 min + 6 Mentoring Táctico de 60 min + 4 Flash Calls de 30 min)
+- **Cadencia:** ~1 sesión/semana
+- **Incluye (Todo lo de LITE +):**
+  - PLD Premium (3-4 casos completos + Filosofía de Liderazgo + Roadmap 18 meses)
+  - Dashboard KPIs automatizado
+  - 5 simulaciones de entrevista
+  - Soporte prioritario WhatsApp (respuesta en menos de 24h)
+  - Revisión de comunicaciones críticas en tiempo real
+  - Sesión de negociación de oferta (si aplica)
+  - Bonus: 2 sesiones follow-up (meses 5-6)
+- **Ideal para:** Transiciones complejas (cambio sector + nivel) y acompañamiento intensivo.
 
 ---
 
-## 3. Política de Precios y Confidencialidad
+## PROGRAMAS DE CONTINUIDAD (OPCIONALES)
+*Nota importante: Solo disponibles para quienes completaron BlackBox90© LITE o PREMIUM. Se evalúan en la sesión final según la situación.*
 
-- **Regla Estricta:** Ningún precio numérico ni desglose de cuotas se hace público en la web ni en materiales abiertos.
-- **Procedimiento:** Toda valoración económica se comunica de forma privada al cliente tras la Sesión Estratégica 1:1 o reunión corporativa de diagnóstico.
+### Extended
+- **Facturación:** Mes a mes, cancelable (350 €/mes)
+- **Para quién:** Completaste el sprint (90-120 días) pero sigues en búsqueda activa.
+- **Objetivo:** Mantener momentum hasta cierre de oportunidad.
+- **Incluye:**
+  - 1 sesión mensual de 60 min
+  - 2 Flash Calls de 15 min/mes
+  - WhatsApp asíncrono (48-72h)
+  - Revisión mensual Dashboard KPIs
+
+### Onboarding Excellence
+- **Facturación:** 750 €/mes x 3 meses (2.250 € total)
+- **Para quién:** Cerraste oportunidad durante o post BlackBox90©.
+- **Objetivo:** Optimizar primeros 90 días en nuevo rol y maximizar impacto.
+- **Incluye:**
+  - 2 sesiones mensuales de 60 min
+  - 4 Flash Calls/mes (ilimitadas mes 1)
+  - WhatsApp prioritario (menos de 24h)
+  - Plan de 90 días estructurado para nuevo rol
+  - Revisión de comunicaciones críticas
+
+### Strategic Advisory
+- **Facturación:** 500 €/mes x 12 meses (6.000 € anual, ahorro 20%)
+- **Duración:** 12 meses. Acompañamiento continuo.
+- **Para quién:** Profesionales que valoran sounding board estratégico continuo.
+- **Objetivo:** Sparring estratégico continuo + aceleración de carrera long-term.
+- **Incluye:**
+  - 1 sesión mensual de 90 min
+  - Flash Calls ilimitadas
+  - WhatsApp prioritario (menos de 24h)
+  - Revisión trimestral de carrera
+  - Prioridad en nuevo sprint si aplica
+
+---
+
+## RECOMENDACIÓN POR SCORECARD
+El Scorecard BlackBox90© da una recomendación personalizada según el nivel:
+- **0-50 puntos (Crítico):** Te recomiendo PREMIUM
+- **51-90 puntos (En desarrollo):** Te recomiendo PREMIUM o LITE según complejidad
+- **91-150 puntos (Competente/avanzado):** Te recomiendo LITE
