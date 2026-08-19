@@ -31,17 +31,17 @@ const pilares = [
 
 const soluciones = [
   {
-    tag: "PROGRAMA EXCLUSIVO",
     title: "BlackBox90©: Cambio de Juego",
-    desc: "Laboratorio de estrategia personal y mentoring 1:1 de 90 días para profesionales senior de marketing digital. Solo 8 plazas exclusivas por edición.",
+    tag: "PROGRAMA EXCLUSIVO (8 PLAZAS)",
+    desc: "Programa de estrategia personal y mentoring 1:1 de 90 días para profesionales senior de marketing digital. Solo 8 plazas exclusivas por edición.",
     link: "/blackbox90",
     cta: "Conocer el Programa",
     img: "/images/13.png",
     bgAccent: "/images/18.png"
   },
   {
-    tag: "EMPRESAS & STARTUPS",
     title: "Headhunting & Selección Digital",
+    tag: "EMPRESAS & STARTUPS",
     desc: "Executive search especializado en la atracción y selección de directores de marketing, Growth leads y talento IT clave para proyectos en expansión.",
     link: "/servicios",
     cta: "Servicios para Empresas",
@@ -49,8 +49,8 @@ const soluciones = [
     bgAccent: "/images/21.png"
   },
   {
-    tag: "ACOMPAÑAMIENTO 1:1",
     title: "Mentoring Directivo & Outplacement",
+    tag: "ACOMPAÑAMIENTO 1:1",
     desc: "Sesiones estratégicas personalizadas para afinar tu discurso, preparar procesos decisivos o desbloquear transiciones de carrera complejas.",
     link: "/servicios",
     cta: "Ver Opciones 1:1",
@@ -96,16 +96,21 @@ export default function Home() {
               HEADHUNTER EN ACTIVO · COACH EMCC PRACTITIONER
             </div>
             
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white tracking-tight leading-[1.1]">
-              Estrategia de carrera para <br/>
-
-              <span className="text-secondary italic font-serif font-normal">líderes de marketing digital.</span>
+            {/* Título Principal con Misma Tipografía y Separación de Bloques */}
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white tracking-tight leading-[1.15]">
+              <span className="block mb-2">Estrategia de carrera para</span>
+              <span className="block text-secondary">líderes de marketing digital.</span>
             </h1>
             
-            <p className="text-gray-300 max-w-2xl mx-auto lg:mx-0 text-base sm:text-lg md:text-xl leading-relaxed">
-              Más de 20 años evaluando talento al otro lado de la mesa. 
-              Ayudo a profesionales senior y directivos de marketing digital a desbloquear su verdadero valor de mercado y acceder a las mejores oportunidades ejecutivas.
-            </p>
+            {/* Subtítulo con Párrafos Separados */}
+            <div className="space-y-4 max-w-2xl mx-auto lg:mx-0 text-gray-300 text-base sm:text-lg md:text-xl leading-relaxed">
+              <p>
+                Más de 20 años evaluando talento al otro lado de la mesa.
+              </p>
+              <p>
+                Ayudo a profesionales senior y directivos de marketing digital a desbloquear su verdadero valor de mercado y acceder a las mejores oportunidades ejecutivas.
+              </p>
+            </div>
             
             {/* Botones de Acción */}
             <div className="flex flex-col sm:flex-row items-center gap-4 pt-2 justify-center lg:justify-start">
@@ -175,24 +180,24 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Stats Section con Tipografía Imponente */}
+      {/* Stats Section con Orden Invertido (Etiqueta Arriba, Cifra Abajo) */}
       <section className="py-16 border-y border-white/[0.08] bg-[#070709]">
         <div className="max-w-container-max mx-auto px-gutter grid grid-cols-2 md:grid-cols-4 gap-8 text-center md:text-left">
           <div className="space-y-2">
-            <div className="text-4xl md:text-5xl text-secondary font-bold font-headline-lg">Más de 20</div>
             <div className="font-label-caps text-xs sm:text-sm text-gray-300 uppercase tracking-widest font-semibold">AÑOS DE EXPERIENCIA</div>
+            <div className="text-4xl md:text-5xl text-secondary font-bold font-headline-lg">Más de 20</div>
           </div>
           <div className="space-y-2">
-            <div className="text-4xl md:text-5xl text-secondary font-bold font-headline-lg">Más de 1.000</div>
             <div className="font-label-caps text-xs sm:text-sm text-gray-300 uppercase tracking-widest font-semibold">PROCESOS DE SELECCIÓN</div>
+            <div className="text-4xl md:text-5xl text-secondary font-bold font-headline-lg">Más de 1.000</div>
           </div>
           <div className="space-y-2">
-            <div className="text-4xl md:text-5xl text-secondary font-bold font-headline-lg">EMCC</div>
             <div className="font-label-caps text-xs sm:text-sm text-gray-300 uppercase tracking-widest font-semibold">COACH PRACTITIONER</div>
+            <div className="text-4xl md:text-5xl text-secondary font-bold font-headline-lg">EMCC</div>
           </div>
           <div className="space-y-2">
-            <div className="text-4xl md:text-5xl text-secondary font-bold font-headline-lg">90 Días</div>
             <div className="font-label-caps text-xs sm:text-sm text-gray-300 uppercase tracking-widest font-semibold">MÉTODO PROBADO</div>
+            <div className="text-4xl md:text-5xl text-secondary font-bold font-headline-lg">90 Días</div>
           </div>
         </div>
       </section>
@@ -218,7 +223,7 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Texto de Autoridad */}
+            {/* Texto de Autoridad con Párrafos Separados */}
             <div className="lg:col-span-7 space-y-6">
               <span className="font-label-caps text-secondary uppercase tracking-[0.25em] text-xs sm:text-sm font-bold block">
                 VENTAJA DIFERENCIAL
@@ -226,9 +231,15 @@ export default function Home() {
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white tracking-tight leading-snug">
                 Conozco ambos lados de la mesa: sé qué busca el reclutador y cómo debe sonar tu propuesta.
               </h2>
-              <p className="text-gray-300 text-base sm:text-lg leading-relaxed">
-                La mayoría de los profesionales senior cometen el error de enviar CVs generalistas o depender únicamente de portales de empleo donde compiten con cientos de candidatos. Al haber liderado procesos de selección para startups y comités de dirección durante más de dos décadas, te enseño a posicionarte desde la perspectiva de quien toma la decisión de contratación.
-              </p>
+              
+              <div className="space-y-4 text-gray-300 text-base sm:text-lg leading-relaxed">
+                <p>
+                  La mayoría de los profesionales senior cometen el error de enviar CVs generalistas o depender únicamente de portales de empleo donde compiten con cientos de candidatos.
+                </p>
+                <p>
+                  Al haber liderado procesos de selección para startups y comités de dirección durante más de dos décadas, te enseño a posicionarte desde la perspectiva de quien toma la decisión de contratación.
+                </p>
+              </div>
               
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
                 <div className="glass-card p-5 rounded-xl border border-white/[0.08]">
@@ -246,15 +257,12 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Áreas de Acompañamiento con Fondos Visuales y Formas 3D */}
+      {/* Soluciones y Programas */}
       <section className="py-20 lg:py-28 bg-[#0e0e12] border-b border-white/[0.08]">
         <div className="max-w-container-max mx-auto px-gutter">
           <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
-            <span className="font-label-caps text-secondary uppercase tracking-[0.25em] text-xs sm:text-sm font-bold">
-              SOLUCIONES Y PROGRAMAS
-            </span>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white tracking-tight">
-              Áreas de Acompañamiento
+              Soluciones y Programas
             </h2>
             <p className="text-gray-300 text-base sm:text-lg leading-relaxed">
               Soluciones a medida para profesionales que buscan un salto cualitativo y para empresas que necesitan líderes contrastados.
@@ -272,16 +280,16 @@ export default function Home() {
                 className="glass-card p-8 sm:p-10 rounded-3xl flex flex-col justify-between group relative overflow-hidden shadow-2xl border border-white/[0.1]"
               >
                 <div>
-                  <div className="flex justify-between items-start mb-6">
-                    <span className="font-label-caps text-secondary text-xs sm:text-sm block tracking-widest font-bold">{sol.tag}</span>
+                  <div className="flex justify-between items-start mb-4">
+                    <h3 className="text-2xl sm:text-3xl font-bold text-white leading-tight">{sol.title}</h3>
                     <img 
                       src={sol.img} 
                       alt="" 
-                      className="w-16 h-16 sm:w-20 sm:h-20 object-contain opacity-85 group-hover:opacity-100 group-hover:scale-110 transition-all duration-500"
+                      className="w-16 h-16 sm:w-20 sm:h-20 object-contain opacity-85 group-hover:opacity-100 group-hover:scale-110 transition-all duration-500 shrink-0 ml-4"
                       onError={(e) => { e.currentTarget.style.display = 'none'; }}
                     />
                   </div>
-                  <h3 className="text-2xl sm:text-3xl font-bold text-white mb-4 leading-tight">{sol.title}</h3>
+                  <span className="font-label-caps text-secondary text-xs sm:text-sm block tracking-widest font-bold mb-4">{sol.tag}</span>
                   <p className="text-gray-300 text-sm sm:text-base mb-8 leading-relaxed">{sol.desc}</p>
                 </div>
                 <Link 
@@ -300,9 +308,6 @@ export default function Home() {
       <section className="py-20 lg:py-28 bg-[#0b0b0e] border-b border-white/[0.08]">
         <div className="max-w-container-max mx-auto px-gutter">
           <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
-            <span className="font-label-caps text-secondary uppercase tracking-[0.25em] text-xs sm:text-sm font-bold">
-              METODOLOGÍA DE TRANSFORMACIÓN
-            </span>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white tracking-tight">
               Los 4 Pilares del Cambio de Juego
             </h2>
@@ -344,7 +349,7 @@ export default function Home() {
       <section className="py-20 bg-[#070709] border-b border-white/[0.08]">
         <div className="max-w-container-max mx-auto px-gutter text-center">
           <span className="font-label-caps text-secondary text-xs sm:text-sm uppercase tracking-[0.25em] font-bold block mb-6">
-            ECOSISTEMA DIGITAL & FOCO SECTORIAL
+            SECTORES EN LOS QUE APLICA BLACKBOX90©
           </span>
           <div className="flex flex-wrap justify-center gap-3 sm:gap-4 max-w-4xl mx-auto">
             {sectores.map((sec, idx) => (
