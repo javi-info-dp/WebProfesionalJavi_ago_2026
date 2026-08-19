@@ -9,30 +9,36 @@ export default function Navbar() {
 
   const navLinks = [
     { name: 'Inicio', path: '/' },
-    { name: 'Experiencia', path: '/experiencia' },
-    { name: 'Formación & Skills', path: '/habilidades' },
-    { name: 'Programas', path: '/programas' },
+    { name: 'Servicios', path: '/servicios' },
+    { name: 'BlackBox90©', path: '/blackbox90' },
+    { name: 'Sobre Mí', path: '/sobre-mi' },
+    { name: 'Blog', path: '/blog' },
     { name: 'Contacto', path: '/contacto' },
   ];
 
   return (
-    <header className="bg-surface/80 dark:bg-surface-container-high/80 backdrop-blur-xl fixed top-0 w-full z-50 border-b border-outline-variant/30 transition-all duration-300">
+    <header className="bg-surface/85 backdrop-blur-xl fixed top-0 w-full z-50 border-b border-outline-variant/30 transition-all duration-300">
       <div className="max-w-container-max mx-auto flex justify-between items-center h-20 px-gutter">
-        <Link to="/" className="font-headline-sm text-headline-sm tracking-tight text-primary dark:text-on-primary-fixed uppercase text-lg sm:text-headline-sm">
-          JAVIER ABELEIRA
+        <Link to="/" className="flex flex-col">
+          <span className="font-headline-sm text-headline-sm tracking-tight text-primary uppercase text-base sm:text-headline-sm leading-tight font-bold">
+            JAVIER ABELEIRA
+          </span>
+          <span className="text-[10px] tracking-widest text-secondary font-label-caps uppercase">
+            DP SOLUCIONES · BLACKBOX90©
+          </span>
         </Link>
         
-        <nav className="hidden md:flex items-center gap-8">
+        <nav className="hidden lg:flex items-center gap-7">
           {navLinks.map((link) => {
             const isActive = location.pathname === link.path;
             return (
               <Link
                 key={link.name}
                 to={link.path}
-                className={`font-label-caps text-label-caps transition-colors duration-300 cursor-pointer ${
+                className={`font-label-caps text-label-caps transition-all duration-300 cursor-pointer ${
                   isActive
-                    ? 'text-secondary dark:text-secondary-fixed-dim border-b border-secondary pb-1'
-                    : 'text-on-surface-variant dark:text-surface-variant hover:text-secondary dark:hover:text-secondary-fixed'
+                    ? 'text-secondary border-b-2 border-secondary pb-1'
+                    : 'text-on-surface-variant hover:text-secondary'
                 }`}
               >
                 {link.name}
@@ -43,20 +49,21 @@ export default function Navbar() {
 
         <div className="hidden md:flex items-center gap-3">
           <a
-            href="https://bookme.name/dpsoluciones/lite/llamada-de-contacto"
+            href="https://bookme.name/dpsoluciones/lite/sesion-estrategica-blackbox90-60-minutos"
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-primary text-on-primary font-label-caps text-label-caps py-2.5 px-5 hover:bg-secondary transition-colors duration-300 uppercase text-xs"
+            className="bg-primary text-on-primary font-label-caps text-xs py-2.5 px-5 hover:bg-secondary transition-colors duration-300 uppercase tracking-wider"
           >
-            Agendar Reunión
+            Sesión Estratégica
           </a>
         </div>
 
         <button 
-          className="md:hidden text-primary"
+          className="lg:hidden text-primary p-2"
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+          aria-label="Abrir menú"
         >
-          {isMobileMenuOpen ? <X /> : <Menu />}
+          {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
         </button>
       </div>
 
@@ -66,26 +73,26 @@ export default function Navbar() {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
-            className="md:hidden bg-surface border-b border-outline-variant/30"
+            className="lg:hidden bg-surface border-b border-outline-variant/30 shadow-xl"
           >
-            <nav className="flex flex-col items-center py-4 gap-4">
+            <nav className="flex flex-col items-center py-6 gap-4">
               {navLinks.map((link) => (
                 <Link
                   key={link.name}
                   to={link.path}
                   onClick={() => setIsMobileMenuOpen(false)}
-                  className="font-label-caps text-label-caps text-on-surface-variant hover:text-secondary transition-colors"
+                  className="font-label-caps text-label-caps text-on-surface-variant hover:text-secondary transition-colors text-sm"
                 >
                   {link.name}
                 </Link>
               ))}
               <a
-                href="https://bookme.name/dpsoluciones/lite/llamada-de-contacto"
+                href="https://bookme.name/dpsoluciones/lite/sesion-estrategica-blackbox90-60-minutos"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-primary text-on-primary font-label-caps text-label-caps py-2.5 px-6 hover:bg-secondary transition-colors duration-300 uppercase text-xs mt-2"
+                className="bg-primary text-on-primary font-label-caps py-3 px-8 hover:bg-secondary transition-colors duration-300 uppercase text-xs mt-3"
               >
-                Agendar Reunión
+                Sesión Estratégica Gratuita
               </a>
             </nav>
           </motion.div>
