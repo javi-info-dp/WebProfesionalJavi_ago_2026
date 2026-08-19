@@ -21,7 +21,8 @@ export default function Services() {
       ],
       link: "/blackbox90",
       cta: "Conocer BlackBox90©",
-      isInternal: true
+      isInternal: true,
+      img: "/images/13.png"
     },
     {
       badge: "1:1 INTENSIVO",
@@ -36,7 +37,8 @@ export default function Services() {
       ],
       link: "https://bookme.name/dpsoluciones/lite/sesion-estrategica-blackbox90-60-minutos",
       cta: "Agendar Sesión 1:1",
-      isInternal: false
+      isInternal: false,
+      img: "/images/30.png"
     },
     {
       badge: "ORIENTACIÓN DIRECTIVA",
@@ -51,7 +53,8 @@ export default function Services() {
       ],
       link: "/contacto",
       cta: "Solicitar Información",
-      isInternal: true
+      isInternal: true,
+      img: "/images/34.png"
     }
   ];
 
@@ -69,7 +72,8 @@ export default function Services() {
       ],
       link: "/contacto",
       cta: "Contratar Búsqueda",
-      isInternal: true
+      isInternal: true,
+      img: "/images/26.png"
     },
     {
       badge: "FORMACIÓN CORPORATIVA",
@@ -84,7 +88,8 @@ export default function Services() {
       ],
       link: "/contacto",
       cta: "Diseñar Plan a Medida",
-      isInternal: true
+      isInternal: true,
+      img: "/images/42.png"
     },
     {
       badge: "CONSULTORÍA ESTRATÉGICA",
@@ -99,7 +104,8 @@ export default function Services() {
       ],
       link: "/contacto",
       cta: "Consultar con Javier",
-      isInternal: true
+      isInternal: true,
+      img: "/images/11.png"
     }
   ];
 
@@ -110,24 +116,26 @@ export default function Services() {
       <div className="max-w-container-max mx-auto px-gutter py-section-desktop bg-[#0b0b0e]">
         
         {/* Header */}
-        <div className="text-center max-w-3xl mx-auto mb-14">
-          <span className="font-label-caps text-secondary uppercase tracking-widest text-xs">PROPUESTA DE VALOR</span>
-          <h1 className="font-display-lg-mobile md:font-display-lg text-white mt-2">
+        <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
+          <span className="font-label-caps text-secondary uppercase tracking-[0.2em] text-xs font-bold">
+            SOLUCIONES ESPECIALIZADAS
+          </span>
+          <h1 className="text-3xl md:text-5xl font-bold text-white tracking-tight">
             Servicios y Programas
           </h1>
-          <p className="font-body-lg text-gray-300 mt-4 text-sm md:text-base">
-            Soluciones de alto nivel tanto para profesionales senior que buscan un cambio de juego, como para empresas que necesitan incorporar talento directivo.
+          <p className="text-gray-300 text-base md:text-lg leading-relaxed">
+            Metodologías contrastadas para profesionales que buscan un salto cualitativo en su carrera y para empresas que necesitan incorporar talento directivo clave.
           </p>
         </div>
 
         {/* Selector de Pestaña */}
         <div className="flex justify-center mb-16">
-          <div className="bg-[#14141a] p-1.5 rounded-lg border border-white/[0.08] flex max-w-md w-full">
+          <div className="bg-[#14141a] p-1.5 rounded-xl border border-white/[0.08] flex max-w-md w-full shadow-lg">
             <button
               onClick={() => setActiveTab('profesionales')}
-              className={`flex-1 py-3 px-6 font-label-caps text-xs tracking-wider uppercase transition-all duration-300 rounded-md ${
+              className={`flex-1 py-3.5 px-6 font-label-caps text-xs tracking-widest uppercase transition-all duration-300 rounded-lg ${
                 activeTab === 'profesionales'
-                  ? 'bg-secondary text-[#0b0b0e] font-bold shadow-lg shadow-secondary/15'
+                  ? 'bg-secondary text-[#0b0b0e] font-bold shadow-lg shadow-secondary/20'
                   : 'text-gray-400 hover:text-white'
               }`}
             >
@@ -135,9 +143,9 @@ export default function Services() {
             </button>
             <button
               onClick={() => setActiveTab('empresas')}
-              className={`flex-1 py-3 px-6 font-label-caps text-xs tracking-wider uppercase transition-all duration-300 rounded-md ${
+              className={`flex-1 py-3.5 px-6 font-label-caps text-xs tracking-widest uppercase transition-all duration-300 rounded-lg ${
                 activeTab === 'empresas'
-                  ? 'bg-secondary text-[#0b0b0e] font-bold shadow-lg shadow-secondary/15'
+                  ? 'bg-secondary text-[#0b0b0e] font-bold shadow-lg shadow-secondary/20'
                   : 'text-gray-400 hover:text-white'
               }`}
             >
@@ -154,22 +162,30 @@ export default function Services() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: idx * 0.1 }}
-              className="glass-panel p-8 rounded-xl flex flex-col justify-between group"
+              className="glass-panel p-8 rounded-2xl flex flex-col justify-between group shadow-xl relative overflow-hidden border border-white/[0.08]"
             >
               <div>
-                <span className="font-label-caps text-secondary text-[11px] block mb-2 tracking-wider font-bold">{item.badge}</span>
-                <h3 className="font-headline-sm text-white mb-1 text-xl font-bold">{item.title}</h3>
-                <h4 className="font-body-md text-gray-400 text-xs mb-4">{item.subtitle}</h4>
+                <div className="flex justify-between items-start mb-4">
+                  <span className="font-label-caps text-secondary text-xs block tracking-widest font-bold">{item.badge}</span>
+                  <img 
+                    src={item.img} 
+                    alt="" 
+                    className="w-14 h-14 object-contain opacity-75 group-hover:opacity-100 group-hover:scale-110 transition-all duration-500"
+                    onError={(e) => { e.currentTarget.style.display = 'none'; }}
+                  />
+                </div>
+                <h3 className="text-xl md:text-2xl font-bold text-white mb-2 leading-snug">{item.title}</h3>
+                <h4 className="font-body-md text-secondary font-medium text-xs mb-4">{item.subtitle}</h4>
                 <p className="font-body-md text-gray-300 text-sm mb-6 leading-relaxed">
                   {item.description}
                 </p>
 
-                <div className="border-t border-white/[0.06] pt-4 mb-8">
-                  <span className="font-label-caps text-secondary text-[11px] uppercase block mb-3 font-bold">Qué incluye:</span>
+                <div className="border-t border-white/[0.08] pt-4 mb-8">
+                  <span className="font-label-caps text-secondary text-xs uppercase block mb-3 font-bold tracking-wider">Qué incluye:</span>
                   <ul className="space-y-2.5">
                     {item.features.map((feat, fIdx) => (
-                      <li key={fIdx} className="flex items-start text-xs text-gray-300">
-                        <span className="text-secondary mr-2 font-bold">✓</span>
+                      <li key={fIdx} className="flex items-start text-xs text-gray-200 leading-relaxed">
+                        <span className="text-secondary mr-2.5 font-bold">✓</span>
                         <span>{feat}</span>
                       </li>
                     ))}
@@ -180,7 +196,7 @@ export default function Services() {
               {item.isInternal ? (
                 <Link
                   to={item.link}
-                  className="block text-center bg-secondary text-[#0b0b0e] font-label-caps text-xs py-3.5 px-6 hover:bg-secondary-hover transition-colors uppercase tracking-wider font-bold rounded"
+                  className="block text-center bg-secondary text-[#0b0b0e] font-label-caps text-xs py-3.5 px-6 hover:bg-secondary-hover transition-colors uppercase tracking-widest font-bold rounded-md shadow-md shadow-secondary/10"
                 >
                   {item.cta}
                 </Link>
@@ -189,7 +205,7 @@ export default function Services() {
                   href={item.link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="block text-center bg-secondary text-[#0b0b0e] font-label-caps text-xs py-3.5 px-6 hover:bg-secondary-hover transition-colors uppercase tracking-wider font-bold rounded"
+                  className="block text-center bg-secondary text-[#0b0b0e] font-label-caps text-xs py-3.5 px-6 hover:bg-secondary-hover transition-colors uppercase tracking-widest font-bold rounded-md shadow-md shadow-secondary/10"
                 >
                   {item.cta}
                 </a>
@@ -198,12 +214,12 @@ export default function Services() {
           ))}
         </div>
 
-        {/* Banner Sesión Estratégica Directa */}
-        <div className="glass-panel p-8 lg:p-12 rounded-xl flex flex-col md:flex-row items-center justify-between gap-6 border-l-4 border-l-secondary">
-          <div className="max-w-2xl">
-            <span className="font-label-caps text-secondary text-xs uppercase block mb-1 font-bold">CONVERSACIÓN SIN COMPROMISO</span>
-            <h3 className="font-headline-md text-white text-2xl">¿Hablamos de tu caso particular?</h3>
-            <p className="font-body-md text-gray-300 mt-2 text-sm leading-relaxed">
+        {/* Banner Conversación Estratégica */}
+        <div className="glass-panel p-8 lg:p-12 rounded-2xl flex flex-col md:flex-row items-center justify-between gap-8 border-l-4 border-l-secondary shadow-2xl">
+          <div className="max-w-2xl space-y-2">
+            <span className="font-label-caps text-secondary text-xs uppercase block font-bold tracking-widest">CONVERSACIÓN SIN COMPROMISO</span>
+            <h3 className="text-2xl md:text-3xl font-bold text-white tracking-tight">¿Hablamos de tu caso particular?</h3>
+            <p className="text-gray-300 text-sm md:text-base leading-relaxed">
               Reserva una sesión estratégica de 30 minutos para explorar cómo podemos orientar tu perfil o cubrir esa posición clave en tu organización.
             </p>
           </div>
@@ -211,7 +227,7 @@ export default function Services() {
             href="https://bookme.name/dpsoluciones/lite/sesion-estrategica-blackbox90-60-minutos"
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-secondary text-[#0b0b0e] font-label-caps text-xs py-4 px-8 hover:bg-secondary-hover transition-colors uppercase tracking-widest whitespace-nowrap font-bold shadow-lg shadow-secondary/15 rounded"
+            className="bg-secondary text-[#0b0b0e] font-label-caps text-xs py-4 px-9 hover:bg-secondary-hover transition-colors uppercase tracking-widest whitespace-nowrap font-bold shadow-xl shadow-secondary/20 rounded-md"
           >
             Agendar Reunión →
           </a>

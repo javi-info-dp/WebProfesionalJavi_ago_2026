@@ -7,6 +7,7 @@ const fases = [
     num: "1",
     titulo: "Claridad y Diferenciación",
     periodo: "Días 1 - 30",
+    img: "/images/1.png",
     puntos: [
       "¿Qué quieres y qué te motiva realmente?",
       "Definición de tu Propuesta de Valor Única (PVU)",
@@ -19,6 +20,7 @@ const fases = [
     num: "2",
     titulo: "Construcción y Visibilidad",
     periodo: "Días 31 - 60",
+    img: "/images/14.png",
     puntos: [
       "CRM Personal con 20-30 stakeholders clave del sector",
       "Optimización de LinkedIn orientada a decisión ejecutiva",
@@ -31,6 +33,7 @@ const fases = [
     num: "3",
     titulo: "Validación y Momentum",
     periodo: "Días 61 - 90",
+    img: "/images/23.png",
     puntos: [
       "Simulaciones de entrevista con enfoque headhunter",
       "Validación market-ready y feedback en tiempo real",
@@ -108,18 +111,29 @@ export default function BlackBox90() {
   return (
     <AnimatedPage>
       {/* Hero BlackBox90 */}
-      <section className="relative min-h-[85vh] flex items-center justify-center bg-[#0b0b0e] text-white py-20 overflow-hidden">
-        <div className="absolute top-1/3 left-1/2 -translate-x-1/2 w-[600px] h-[350px] bg-secondary/10 rounded-full blur-[140px] pointer-events-none"></div>
+      <section className="relative min-h-[88vh] flex items-center justify-center bg-[#0b0b0e] text-white py-20 overflow-hidden">
+        <div className="absolute top-1/3 left-1/2 -translate-x-1/2 w-[700px] h-[400px] bg-secondary/15 rounded-full blur-[150px] pointer-events-none"></div>
 
         <div className="max-w-container-max mx-auto px-gutter relative z-10 text-center">
-          <span className="font-label-caps text-secondary tracking-[0.2em] text-xs uppercase block mb-4 font-bold">
+          
+          <div className="flex justify-center mb-6">
+            <img 
+              src="/images/Logo BlackBox fondo transparente.png" 
+              alt="Logo BlackBox90" 
+              className="h-20 sm:h-24 w-auto object-contain drop-shadow-[0_0_20px_rgba(201,168,118,0.25)]"
+            />
+          </div>
+
+          <span className="font-label-caps text-secondary tracking-[0.25em] text-xs uppercase block mb-4 font-bold">
             PROGRAMA HÍBRIDO DE COACHING Y MENTORING EJECUTIVO
           </span>
-          <h1 className="font-display-lg-mobile md:font-display-lg text-white tracking-tight max-w-4xl mx-auto leading-[1.1]">
+          
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white tracking-tight max-w-4xl mx-auto leading-[1.12]">
             BlackBox90©: <br/>
-            <span className="text-secondary italic">Cambio de Juego</span>
+            <span className="text-secondary italic font-serif font-normal">Cambio de Juego</span>
           </h1>
-          <p className="font-body-lg text-gray-300 max-w-2xl mx-auto mt-6 text-base md:text-xl leading-relaxed">
+          
+          <p className="text-gray-300 max-w-2xl mx-auto mt-6 text-base md:text-xl leading-relaxed">
             Un laboratorio de estrategia personal de 90 días para profesionales de marketing digital que han tocado techo y saben que su verdadero potencial es mucho mayor.
           </p>
           
@@ -128,7 +142,7 @@ export default function BlackBox90() {
               href="https://form.typeform.com/to/u1QuphFN"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-secondary text-[#0b0b0e] font-label-caps py-4 px-8 hover:bg-secondary-hover transition-colors font-bold uppercase text-xs tracking-widest shadow-xl shadow-secondary/15 rounded"
+              className="bg-secondary text-[#0b0b0e] font-label-caps py-4 px-9 hover:bg-secondary-hover transition-colors font-bold uppercase text-xs tracking-widest shadow-2xl shadow-secondary/20 rounded-md"
             >
               Postular a una de las 8 Plazas
             </a>
@@ -136,60 +150,60 @@ export default function BlackBox90() {
               href="https://bookme.name/dpsoluciones/lite/sesion-estrategica-blackbox90-60-minutos"
               target="_blank"
               rel="noopener noreferrer"
-              className="border border-white/20 text-white font-label-caps py-4 px-8 hover:bg-white/5 hover:border-secondary transition-colors uppercase text-xs tracking-widest rounded"
+              className="border border-white/25 text-white font-label-caps py-4 px-8 hover:bg-white/5 hover:border-secondary transition-colors uppercase text-xs tracking-widest rounded-md"
             >
               Agendar Sesión Estratégica (60 min)
             </a>
           </div>
 
-          <div className="flex flex-wrap justify-center gap-8 mt-12 text-xs text-gray-300 border-t border-white/[0.06] pt-6">
-            <span><strong className="text-secondary">✓</strong> Solo 8 plazas por edición</span>
-            <span><strong className="text-secondary">✓</strong> 100% tailor-made</span>
-            <span><strong className="text-secondary">✓</strong> Certificación EMCC</span>
-            <span><strong className="text-secondary">✓</strong> 4 Coaching + 3 Mentoring</span>
+          <div className="flex flex-wrap justify-center gap-8 mt-12 text-xs text-gray-300 border-t border-white/[0.08] pt-6">
+            <span><strong className="text-secondary font-bold">✓</strong> Solo 8 plazas por edición</span>
+            <span><strong className="text-secondary font-bold">✓</strong> 100% tailor-made</span>
+            <span><strong className="text-secondary font-bold">✓</strong> Certificación EMCC</span>
+            <span><strong className="text-secondary font-bold">✓</strong> 4 Coaching + 3 Mentoring</span>
           </div>
         </div>
       </section>
 
       {/* El Verdadero Desafío */}
-      <section className="py-section-padding-mobile md:py-section-padding-desktop bg-[#0e0e12] border-y border-white/[0.06]">
+      <section className="py-20 lg:py-28 bg-[#0e0e12] border-y border-white/[0.06]">
         <div className="max-w-container-max mx-auto px-gutter">
-          <div className="text-center max-w-2xl mx-auto mb-16">
-            <span className="font-label-caps text-secondary uppercase tracking-widest text-xs font-bold">EL RETO</span>
-            <h2 className="font-headline-lg text-white mt-2">El verdadero desafío no está en tu CV</h2>
-            <p className="font-body-md text-gray-400 mt-2 text-sm">
+          <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
+            <span className="font-label-caps text-secondary uppercase tracking-[0.2em] text-xs font-bold">EL RETO</span>
+            <h2 className="text-3xl md:text-5xl font-bold text-white tracking-tight">El verdadero desafío no está en tu CV</h2>
+            <p className="text-gray-300 text-base md:text-lg leading-relaxed">
               Llevas años liderando equipos y estrategias. Has alcanzado el éxito, pero la fórmula actual ya no te satisface.
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <div className="glass-card p-6 rounded-xl">
-              <h3 className="font-headline-sm text-white text-base font-bold mb-2">Ofertas que no motivan</h3>
-              <p className="font-body-md text-gray-400 text-xs leading-relaxed">Las oportunidades que te llegan parecen más de lo mismo y no suponen un desafío real.</p>
+            <div className="glass-card p-7 rounded-2xl border border-white/[0.06]">
+              <h3 className="text-lg font-bold text-white mb-2">Ofertas que no motivan</h3>
+              <p className="text-gray-400 text-xs leading-relaxed">Las oportunidades que te llegan parecen más de lo mismo y no suponen un desafío real.</p>
             </div>
-            <div className="glass-card p-6 rounded-xl">
-              <h3 className="font-headline-sm text-white text-base font-bold mb-2">Discurso estancado</h3>
-              <p className="font-body-md text-gray-400 text-xs leading-relaxed">No sabes cómo empaquetar y monetizar todo tu valor acumulado para el siguiente gran salto.</p>
+            <div className="glass-card p-7 rounded-2xl border border-white/[0.06]">
+              <h3 className="text-lg font-bold text-white mb-2">Discurso estancado</h3>
+              <p className="text-gray-400 text-xs leading-relaxed">No sabes cómo empaquetar y monetizar todo tu valor acumulado para el siguiente gran salto.</p>
             </div>
-            <div className="glass-card p-6 rounded-xl">
-              <h3 className="font-headline-sm text-white text-base font-bold mb-2">Mercado opaco</h3>
-              <p className="font-body-md text-gray-400 text-xs leading-relaxed">El 80% de las mejores posiciones ejecutivas nunca se publican y no sabes cómo acceder a ellas.</p>
+            <div className="glass-card p-7 rounded-2xl border border-white/[0.06]">
+              <h3 className="text-lg font-bold text-white mb-2">Mercado opaco</h3>
+              <p className="text-gray-400 text-xs leading-relaxed">El 80% de las mejores posiciones ejecutivas nunca se publican y no sabes cómo acceder a ellas.</p>
             </div>
-            <div className="glass-card p-6 rounded-xl">
-              <h3 className="font-headline-sm text-white text-base font-bold mb-2">Miedo al paso en falso</h3>
-              <p className="font-body-md text-gray-400 text-xs leading-relaxed">Una mala decisión en esta etapa de tu carrera tiene un coste personal y profesional muy alto.</p>
+            <div className="glass-card p-7 rounded-2xl border border-white/[0.06]">
+              <h3 className="text-lg font-bold text-white mb-2">Miedo al paso en falso</h3>
+              <p className="text-gray-400 text-xs leading-relaxed">Una mala decisión en esta etapa de tu carrera tiene un coste personal y profesional muy alto.</p>
             </div>
           </div>
         </div>
       </section>
 
       {/* Las 3 Fases del Sistema */}
-      <section className="py-section-padding-mobile md:py-section-padding-desktop bg-[#0b0b0e] border-b border-white/[0.06]">
+      <section className="py-20 lg:py-28 bg-[#0b0b0e] border-b border-white/[0.06]">
         <div className="max-w-container-max mx-auto px-gutter">
-          <div className="text-center max-w-2xl mx-auto mb-16">
-            <span className="font-label-caps text-secondary uppercase tracking-widest text-xs font-bold">EL MÉTODO</span>
-            <h2 className="font-headline-lg text-white mt-2">El Sistema en 3 Fases</h2>
-            <p className="font-body-md text-gray-400 mt-2 text-sm">90 días de transformación ejecutiva, estratégica y personal.</p>
+          <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
+            <span className="font-label-caps text-secondary uppercase tracking-[0.2em] text-xs font-bold">METODOLOGÍA EXCLUSIVA</span>
+            <h2 className="text-3xl md:text-5xl font-bold text-white tracking-tight">El Sistema en 3 Fases</h2>
+            <p className="text-gray-300 text-base md:text-lg">90 días de transformación ejecutiva, estratégica y personal.</p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -200,31 +214,37 @@ export default function BlackBox90() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: idx * 0.1 }}
-                className="glass-panel p-8 rounded-xl flex flex-col justify-between"
+                className="glass-panel p-8 rounded-2xl flex flex-col justify-between group shadow-xl border border-white/[0.08]"
               >
                 <div>
-                  <div className="flex justify-between items-center mb-4">
-                    <span className="w-10 h-10 rounded-full bg-secondary text-[#0b0b0e] flex items-center justify-center font-bold text-lg font-headline-sm">
+                  <div className="flex justify-between items-center mb-6">
+                    <span className="w-12 h-12 rounded-xl bg-secondary text-[#0b0b0e] flex items-center justify-center font-bold text-xl font-headline-sm shadow-md">
                       {fase.num}
                     </span>
-                    <span className="font-label-caps text-secondary text-xs font-bold">{fase.periodo}</span>
+                    <img 
+                      src={fase.img} 
+                      alt="" 
+                      className="w-14 h-14 object-contain opacity-80 group-hover:opacity-100 group-hover:scale-110 transition-all duration-300"
+                      onError={(e) => { e.currentTarget.style.display = 'none'; }}
+                    />
                   </div>
                   
-                  <h3 className="font-headline-sm text-white mb-4 text-xl font-bold">{fase.titulo}</h3>
+                  <span className="font-label-caps text-secondary text-xs font-bold block mb-1">{fase.periodo}</span>
+                  <h3 className="text-xl md:text-2xl font-bold text-white mb-4">{fase.titulo}</h3>
                   
-                  <ul className="space-y-2.5 mb-6">
+                  <ul className="space-y-3 mb-6">
                     {fase.puntos.map((punto, pIdx) => (
                       <li key={pIdx} className="flex items-start text-xs text-gray-300 leading-relaxed">
-                        <span className="text-secondary mr-2 font-bold">•</span>
+                        <span className="text-secondary mr-2.5 font-bold">•</span>
                         <span>{punto}</span>
                       </li>
                     ))}
                   </ul>
                 </div>
 
-                <div className="border-t border-white/[0.08] pt-4 bg-white/[0.02] -mx-8 -mb-8 p-6 mt-4 rounded-b-xl">
-                  <span className="font-label-caps text-secondary text-[10px] uppercase block mb-1 font-bold">Entregable:</span>
-                  <p className="font-body-md text-white text-xs font-semibold">{fase.entregable}</p>
+                <div className="border-t border-white/[0.08] pt-4 bg-white/[0.02] -mx-8 -mb-8 p-6 mt-4 rounded-b-2xl">
+                  <span className="font-label-caps text-secondary text-[11px] uppercase block mb-1 font-bold">Entregable:</span>
+                  <p className="text-white text-xs font-semibold">{fase.entregable}</p>
                 </div>
               </motion.div>
             ))}
@@ -233,12 +253,12 @@ export default function BlackBox90() {
       </section>
 
       {/* Planes y Modalidades (LITE vs PREMIUM) */}
-      <section className="py-section-padding-mobile md:py-section-padding-desktop bg-[#0e0e12] border-b border-white/[0.06]">
+      <section className="py-20 lg:py-28 bg-[#0e0e12] border-b border-white/[0.06]">
         <div className="max-w-container-max mx-auto px-gutter">
-          <div className="text-center max-w-2xl mx-auto mb-16">
-            <span className="font-label-caps text-secondary uppercase tracking-widest text-xs font-bold">MODALIDADES</span>
-            <h2 className="font-headline-lg text-white mt-2">Programas y Precios</h2>
-            <p className="font-body-md text-gray-400 mt-2 text-sm">
+          <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
+            <span className="font-label-caps text-secondary uppercase tracking-[0.2em] text-xs font-bold">MODALIDADES</span>
+            <h2 className="text-3xl md:text-5xl font-bold text-white tracking-tight">Programas y Precios</h2>
+            <p className="text-gray-300 text-base md:text-lg">
               Elige el nivel de profundidad que mejor se adapte a tu momento actual.
             </p>
           </div>
@@ -247,26 +267,26 @@ export default function BlackBox90() {
             {planes.map((plan, idx) => (
               <div
                 key={idx}
-                className={`p-8 lg:p-10 rounded-xl border flex flex-col justify-between transition-all duration-300 relative ${
+                className={`p-8 lg:p-10 rounded-2xl border flex flex-col justify-between transition-all duration-300 relative shadow-xl ${
                   plan.destacado
-                    ? 'glass-panel border-secondary shadow-2xl shadow-secondary/10'
-                    : 'glass-card'
+                    ? 'glass-panel border-secondary shadow-2xl shadow-secondary/15 scale-[1.02]'
+                    : 'glass-card border-white/[0.08]'
                 }`}
               >
                 {plan.destacado && (
-                  <span className="absolute -top-3 right-8 bg-secondary text-[#0b0b0e] font-label-caps text-[10px] py-1 px-4 uppercase font-bold tracking-widest shadow-md rounded">
+                  <span className="absolute -top-3.5 right-8 bg-secondary text-[#0b0b0e] font-label-caps text-[10px] py-1.5 px-4 uppercase font-bold tracking-widest shadow-lg rounded-full">
                     MÁS COMPLETO
                   </span>
                 )}
 
                 <div>
                   <div className="flex justify-between items-baseline mb-2">
-                    <h3 className="font-headline-md text-2xl text-white font-bold">{plan.nombre}</h3>
+                    <h3 className="text-2xl lg:text-3xl font-bold text-white">{plan.nombre}</h3>
                     <span className="font-label-caps text-xs text-secondary font-bold">{plan.duracion}</span>
                   </div>
 
                   <div className="mb-6">
-                    <div className="font-display-lg-mobile text-3xl md:text-4xl font-bold text-secondary">
+                    <div className="text-3xl md:text-4xl font-bold text-secondary">
                       {plan.precio}
                     </div>
                     <div className="text-xs text-gray-400 mt-1">
@@ -274,18 +294,18 @@ export default function BlackBox90() {
                     </div>
                   </div>
 
-                  <p className="font-body-md text-xs text-gray-300 mb-6 leading-relaxed">
+                  <p className="text-xs text-gray-300 mb-6 leading-relaxed">
                     {plan.idealPara}
                   </p>
 
                   <div className="border-t border-white/[0.08] pt-4 mb-8">
-                    <span className="font-label-caps text-[11px] uppercase block mb-3 text-secondary font-bold">
+                    <span className="font-label-caps text-[11px] uppercase block mb-3 text-secondary font-bold tracking-wider">
                       Qué incluye:
                     </span>
                     <ul className="space-y-2.5">
                       {plan.incluye.map((inc, iIdx) => (
                         <li key={iIdx} className="flex items-start text-xs text-gray-200">
-                          <span className="mr-2 font-bold text-secondary">✓</span>
+                          <span className="mr-2.5 font-bold text-secondary">✓</span>
                           <span>{inc}</span>
                         </li>
                       ))}
@@ -297,7 +317,7 @@ export default function BlackBox90() {
                   href={plan.ctaLink}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="block text-center font-label-caps text-xs py-4 px-6 uppercase tracking-wider font-bold transition-colors bg-secondary text-[#0b0b0e] hover:bg-secondary-hover rounded shadow-lg shadow-secondary/15"
+                  className="block text-center font-label-caps text-xs py-4 px-6 uppercase tracking-widest font-bold transition-colors bg-secondary text-[#0b0b0e] hover:bg-secondary-hover rounded-md shadow-lg shadow-secondary/15"
                 >
                   Postular a Plaza ({plan.nombre})
                 </a>
@@ -308,22 +328,22 @@ export default function BlackBox90() {
       </section>
 
       {/* FAQs */}
-      <section className="py-section-padding-mobile md:py-section-padding-desktop bg-[#0b0b0e]">
+      <section className="py-20 lg:py-28 bg-[#0b0b0e]">
         <div className="max-w-3xl mx-auto px-gutter">
-          <div className="text-center mb-12">
-            <span className="font-label-caps text-secondary uppercase tracking-widest text-xs font-bold">DUDAS FRECUENTES</span>
-            <h2 className="font-headline-lg text-white mt-2">Preguntas Frecuentes</h2>
+          <div className="text-center mb-16 space-y-4">
+            <span className="font-label-caps text-secondary uppercase tracking-[0.2em] text-xs font-bold">DUDAS FRECUENTES</span>
+            <h2 className="text-3xl md:text-4xl font-bold text-white tracking-tight">Preguntas Frecuentes</h2>
           </div>
 
           <div className="space-y-4">
             {faqs.map((faq, idx) => (
-              <div key={idx} className="glass-card rounded-lg overflow-hidden">
+              <div key={idx} className="glass-card rounded-xl overflow-hidden border border-white/[0.06]">
                 <button
                   onClick={() => setOpenFaq(openFaq === idx ? null : idx)}
-                  className="w-full p-6 text-left flex justify-between items-center gap-4 font-headline-sm text-base text-white hover:text-secondary transition-colors font-bold"
+                  className="w-full p-6 text-left flex justify-between items-center gap-4 font-headline-sm text-base md:text-lg text-white hover:text-secondary transition-colors font-bold"
                 >
                   <span>{faq.q}</span>
-                  <span className="text-secondary font-bold text-lg">{openFaq === idx ? '−' : '+'}</span>
+                  <span className="text-secondary font-bold text-xl">{openFaq === idx ? '−' : '+'}</span>
                 </button>
                 {openFaq === idx && (
                   <div className="px-6 pb-6 text-sm text-gray-300 font-body-md leading-relaxed border-t border-white/[0.06] pt-4">
